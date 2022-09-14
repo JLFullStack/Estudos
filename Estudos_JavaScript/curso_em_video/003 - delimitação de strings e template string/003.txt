@@ -1,0 +1,52 @@
+                                    					DELIMITAÇÃO DE STRINGS
+
+
+existem 3 formas de delimitar uma string em JavaScript
+e cada forma de delimitação faz diferença na linguagem:
+
+formas de delimitar:
+	var delimitador1  = "JavaScript" 
+	var delimitador2  = 'JavaScript' 
+	var delimitador3  = `JavaScript` 
+
+	
+Ao usar window.alert com concatenação, estás três formas mostrarão a escrita = delimitando JavaScript com aspas duplas
+	window.alert("delimitando "+ delimitador1 +" com aspas duplas.")
+
+
+<<<----------------------------------------------------------------------------------------------------------------------------------------------------------------->>>
+
+Em versões mais recentes da liguagem, foi criada uma nova forma de delimitar as strings, chamada de template string, 
+eliminando a necessidade De utilizar a concatenação.
+
+	var js = "JavaScript"
+	var ts = "template string"
+
+Ao usar window.alert com o template string, será mostrada a escrita = delimitando JavaScript e utilizando o template string
+   	window.alert(`delimitando ${js} e utilizando o ${ts}.`)
+
+	OBS: para que o template string funcione corretamente é necessário 
+	     utilizar o comando de mensagem com a crase no início e no final da menssagem.
+	     window.alert(`mensagem`)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

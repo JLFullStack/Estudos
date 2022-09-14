@@ -1,0 +1,56 @@
+								REPOSITORY E INJEÇÃO DE DEPENDÊNCIA
+(Repository):
+	<<<------------------------------------------------------------------------------------------------------------------------------------------>>>
+	1- Criar pasta "Repository" e dentro desta pasta criar uma subpasta "Interfaces" para separar os repositórios das interfaces
+	   1.1 - Na pasta "Interfaces": criar uma interface "I_Nome_da_modelRepository"
+
+		Exemplo:	
+
+			   public interface IProdutoModelRepository
+	         	   {
+
+		    	   {
+
+
+	<<<------------------------------------------------------------------------------------------------------------------------------------------>>>
+
+
+	   1.2 - Na pasta "Repository": criar uma classe concreta "Nome_da_modelRepository"
+		Exemplo:
+	
+    			public class AlunoRepository : IAlunoRepository
+    			{
+        			private readonly AppDbContext _appContext;  /* injetar um objeto ("readonly" somente leitura) fora do construtor para 
+                                                       				receber o objeto interno do construtor e liberar seu acesso fora do mesmo */
+
+
+        		public AlunoRepository(AppDbContext Context) //construtor
+        		{
+            			_appContext = Context;
+        		}
+
+
+	<<<------------------------------------------------------------------------------------------------------------------------------------------>>>
+
+
+(Injeção de Dependência CLASSE STARTUP):
+
+		public void ConfigureServices(IServiceCollection services)
+		{
+			services.AddScoped<IAlunoRepository, AlunoRepository>();
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		

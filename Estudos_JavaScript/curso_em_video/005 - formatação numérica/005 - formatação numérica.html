@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>005 - Formatação numérica</title>
+
+    <!--CSS-->
+    <style>
+        body
+        {
+            background-color: rgba(63, 63, 63, 0.644);
+            color: rgb(53, 53, 53);
+            font-size: 15pt;
+            align-items: center;
+        }
+        h1
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            color:rgba(255, 255, 255, 0.836);
+        }
+        p
+        {
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+    <!--CSS-->
+</head>
+<body>
+    <h1>JavaScript - 005</h1>
+    <p>estudando a formatação de números</p>
+
+    <!--JavaScript-->
+    <script>
+        var n1 = Number(window.prompt('Digite um número:'))
+        document.writeln(`número digitado: ${n1} <br/>`)
+
+        //O Método "toFixed()" fixa a quantidade de casas decimais após o ponto
+        document.writeln(`<br/> Exemplo do método "toFixed()": ${n1.toFixed(2)} <br/>`)
+
+        //Caso queira que apareça a vírgula no lugar do ponto, é possível utilizar o Método toFixed().replace()
+        document.writeln(`Exemplo do método "toFixed().replace()": ${n1.toFixed(2).replace('.',',')} <br/>`)
+
+        //Também é possível adicionar siglas monetárias utilizando o método "toLocaleString()"
+        document.writeln(`Exemplos do método "toLocaleString()": <br/>`)
+        
+        document.writeln(`<br/>${n1.toLocaleString('pt-BR', {style:'currency', currency:'BRL'})} `)
+
+        document.writeln(`<br/>${n1.toLocaleString('pt-BR', {style:'currency', currency:'USD'})} `)
+
+        document.writeln(`<br/>${n1.toLocaleString('pt-BR', {style:'currency', currency:'EUR'})} `)
+    </script>
+    <!--JavaScript-->
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--adiciona icone na guia da página-->
+    <link rel="shortcut icon" href="../Mídias/images/icon-study.png" type="image/x-icon">
+
+    <title>HTML5 e CSS3</title>
+
+    <link rel="stylesheet" href="lib/001_index.css" />
+</head>
+
+<body>
+    <!--hieararquia de títulos h1; h2...h6-->
+    <h1>Curso em Vídeo - HTML5 e CSS3 - Módulo 1</h1>
+    <h2>conteúdos aprendidos no módulo 1 deste curso</h2>
+
+    <hr>
+
+    <h3>Carregamento de imagens:</h3>
+    <img class="logo" src="../Mídias/images/logo-css3.png" alt="logo-css3">
+    <img class="logo" src="../Mídias/images/logo-html5.png" alt="logo-html5">
+
+    <!--aproveitando imagem da internet-->
+    <img class="logo-js" src="https://miro.medium.com/max/344/1*tZHcs0d7MAG-BBcjBekZYA.png" alt="logo-javascript">
+
+    <hr>
+
+    <h3>Formatação de Texto:</h3>
+    <p>textos excluídos ficam <del>marcados</del></p>
+    <p>textos iseridos são <ins>sublinhados</ins> </p>
+    <p>textos sobescritos: X<sup>2</sup> </p>
+    <p>textos subescritos: H<sub>2</sub>O </p>
+    <!--<code> faz com que as letras fiquem mono-espaçadas(todas as letras com espaçamento igual)-->
+    <p>textos mono-espaçados: <code>document.querySelector("")</code> é um código JavaScript</p>
+
+    <!--<strong> deixa o texto em negrito-->
+    <p> textos pré-formatados com <strong>identação</strong>:
+        <!--<pre> deixa o texto pré-formatado-->
+        <pre>
+    <!--<em> deixa o texto em itálico-->
+    <em>
+        Os textos com identação são mostrados
+        nas páginas da forma que são escritos no código.
+        Utilizam o espaçamento, quebra de linha e tudo mais.
+        Recurso ótimo para mostrar códigos de programação:
+    </em>
+
+    <!--<mark> coloca uma marcação de texto-->
+    if ( <mark>condicao</mark> ) 
+    {
+        // códigos que serão executados
+        // códigos que serão executados
+        // códigos que serão executados
+    }
+    </pre>
+    </p>
+
+    <!--<q> é a forma correta de fazer citações Simples-->
+    <p>Citações simples: <q><em>A tecnologia move o mundo.</em></q> <strong>Steve Jobs</strong></p>
+
+    <!--Citações completas são compostas por referência ao texto ou livro dentro de uma <blockquote>-->
+    <p>Citações completas: <br> E assim disse Thiago Nigro em seu livro <q>Do Mil Ao Milhão</q>
+        <blockquote cite="https://www.oprimorico.com.br/livro-do-mil-ao-milhao/">
+            <pre>
+                <em>
+                    é necessário construir três pilares básicos em nossas vidas:
+                        gastar bem o seu dinheiro,
+                        investir melhor o seu excedente e
+                        aprender a ganhar mais dinheiro.
+                </em>
+            </pre>
+        </blockquote>
+    </p>
+
+    <p>Abreviações: <abbr title="Curso de HTML5 e CSS3">Aprendendo a aprender!</abbr></p>
+
+    <hr>
+
+    <h3>Listas:</h3>
+    <h4>Listas Ordenadas: </h4>
+    <p> Representa uma lista de itens ordenados. De forma característica esses <br>
+        itens, ordenados em uma lista, são mostrados com uma contagem que os precede, <br>
+        que pode ser de qualquer tipo: como numerais, letras, algarismos romanos, ou simples símbolos.
+    </p>
+    <h4>Listas Desordenadas:</h4>
+    <p>representa uma lista de itens sem ordem rígida, isto é, uma coleção de itens <br>
+        que não trazem uma ordenação numérica e as suas posições, nessa lista, são irrelevantes.
+    </p>
+
+    <h4>Listas Mistas:</h4>
+    <p>São listas que utilizam listas ordenadas dentro de outras ou listas ordenadas e desordenadas juntas, mas
+        organizadas</p>
+
+    <p>Exemplo da utilização de uma lista ordenada e uma lista desordenada dentro de uma lista mista:
+
+        <p><strong>BOLO COMUM</strong></p>
+        <!--lista mista-->
+        <ul>
+            <li>
+                <em>
+                    <p>Ingredientes</p>
+                </em>
+            </li>
+            <!--<ul> refere-se a uma lista desordenada-->
+            <ul>
+                <li>2 xícaras (chá) de açúcar </li>
+                <li>3 xícaras (chá) de farinha de trigo </li>
+                <li>4 colheres (sopa) de margarina </li>
+                <li>3 ovos </li>
+                <li>1 e 1/2 xícara (chá) de leite </li>
+                <li>1 colher (sopa) bem cheia de fermento em pó</li>
+            </ul>
+
+            <li>
+                <em>
+                    <p>Modo de Preparo</p>
+                </em>
+            </li>
+            <!--<ol> refere-se a uma lista ordenada-->
+            <ol type="1">
+                <li>Bater o açúcar, a margarina e os ovos.</li>
+                <li>Depois acrescente a farinha de trigo, o leite e por último o fermento.</li>
+                <li>Unte a forma com farinha.</li>
+                <li>Asse por mais ou menos 40 minutos.</li>
+            </ol>
+        </ul>
+        <!--lista mista-->
+    </p>
+
+    <h4>Listas de Definição:</h4>
+    <p>Uma lista de definições não é uma lista de itens. Esta é uma lista de termos e explicações dos termos.
+
+        <!--Uma lista de definições começa com a tag <dl>. 
+        Cada termo da lista de definições começa com a tag <dt>. 
+        Cada definição da lista de definições começa com a tag <dd>.-->
+        <dl>
+            <dt>HTML</dt>
+            <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd>
+            <dt>CSS</dt>
+            <dd>Linguagem de marcação para a criação do design de um site.</dd>
+            <dt>JavaScript</dt>
+            <dd>Linguagem de programação para a crianção de interatividade de um site.</dd>
+        </dl>
+    </p>
+
+    <hr>
+
+    <h3>Mídias:</h3>
+    <H4>imagens dinâmicas:</H4>
+    <p>Imagens dinâmicas se adaptam ao tamanho da página aberta</p>
+    <picture>
+        <source media="(max-width: 720px)" srcset="../Mídias/images/imagem-P.png" type="image/png">
+        <source media="(max-width: 1020px)" srcset="../Mídias/images/imagem-M.png" type="image/png">
+        <img src="../Mídias/images/imagem-G.png" alt="imagem-dinâmica">
+    </picture>
+
+    <h4>reprodução de áudio:</h4>
+    <!--para que o audio tenha compatibilidade com grande parte dos navegadores
+        é uma boa prática disponibilizá-lo com os formatos MP3 e OGG. 
+        Arquivos wav são extremamente pesados para sites.-->
+    <audio controls loop>
+        <source src="../Mídias/audio/audio-site.ogg" type="audio/ogg">
+        <source src="../Mídias/audio/audio-site.mp3" type="audio/mpeg">
+        <source src="../Mídias/audio/audio-site.wav" type="audio/wav">
+        <p>seu navegador não é compatível com os formatos deste áudio!</p>
+    </audio>
+
+    <h4>reprodução de vídeo:</h4>
+    <h5>reprodução de vídeos em hospedagem própria:</h5>
+    <!--para que o vídeo tenha compatibilidade com grande parte dos navegadores
+        é uma boa prática disponibilizá-lo com os formatos mp4, webm, m4v e ogv.-->
+    <video controls>
+        <source src="../Mídias/video/video-casa-neve.mp4" type="video/mp4">
+        <source src="../Mídias/video/video-casa-neve.webm" type="video/webm">
+        <source src="../Mídias/video/video-casa-neve.m4v" type="video/m4v">
+        <source src="../Mídias/video/video-casa-neve.ogv" type="video/ogv">
+        <p>seu navegador não é compatível com os formatos deste vídeo!</p>
+    </video>
+
+    <h5>reprodução de vídeos com incorporação externa:</h5>
+    <!--Incorporar vídeos hospedados em outros servidores é a melhor forma de evitar
+    auto consumo de dados no servidor interno. A melhor opção é incorporar vídeos
+    do youtube, considerado o 2º maior site de busca.
+    Caso a intenção seja manter o vídeo aberto somente para asinantes, tem a opção
+    de hospedagem no site vimeo-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/IdImi_V2IrA" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+    <hr>
+
+    <h3>Links e âncoras:</h3>
+    <p>Uma âncora pode apontar para qualquer recurso na Web: uma página em HTML, <br>
+        uma imagem, um arquivo de som, um filme, etc.</p>
+    <h4>links para download:</h4>
+    <ul>
+        <!--A HTML usa a tag <a> (âncora) para criar um vínculo (link) com outro documento.-->
+        <!--<href="url"> adiciona link ao texto-->
+        <!--download"" força a baixar o arquivo do link-->
+        <li><a href="../Mídias/images/logo-css3.png" download="logo-css3.png">Baixar logo CSS3</a></li>
+        <li><a href="../Mídias/images/logo-html5.png" download="logo-html5.png">Baixar logo HTML5</a></li>
+    </ul>
+    <h4>links externos:</h4>
+    <!--target="_blank" faz com que o link abra em uma nova aba-->
+    <p>W3C tags obsoletas no HTML5:
+        <a href="https://www.w3.org/TR/2014/REC-html5-20141028/obsolete.html" target="_blank"
+            rel="external"><em>www.w3.org</em>
+        </a>
+    </p>
+    <h4>links internos:</h4>
+    <p>Links internos são links em seu site que apontam para outro artigo ou página do seu próprio site.</p>
+    <p>Está é a página do módulo 1 do curso de HTML5 e CSS3, clique <a href="../002/modulo-2.html"
+            rel="next"><strong>aqui</strong></a>
+        para acessar a página do módulo 2 deste curso</p>
+
+</body>
+
+</html>

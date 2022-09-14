@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>004 - Métodos string e função document</title>
+
+    <!--CSS-->
+    <style>
+        body
+        {
+            background-color: rgba(63, 63, 63, 0.644);
+            color: rgb(53, 53, 53);
+            font-size: 15pt;
+            align-items: center;
+        }
+        h1
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            color:rgba(255, 255, 255, 0.836);
+        }
+        p
+        {
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+    <!--CSS-->
+</head>
+<body>
+    <h1>JavaScript - 004</h1>
+    <p>estudando os métodos string e a função document</p>
+
+    <!--JavaScript-->
+    <script>
+        var nome = window.prompt("Qual é o seu nome ?")
+
+        /*O método document.writeln escreve a menssagem na página html. Além
+         *deste, a função document tem muitos outros métodos.
+         *Com ele também é possível utilizar html junto às menssagens
+        */
+        document.writeln(`Olá, ${nome}, seu nome tem ${nome.length} letras <br/>`)
+
+        document.writeln(`<br/> O método "toUpperCase" deixa as letras em maiúsculas, <br/> ex: ${nome.toUpperCase()} <br/>`)
+
+        document.writeln(`<br/> O método "toLowerCase" deixa as letras em minúsculas, <br/> ex: ${nome.toLowerCase()} <br/>`)
+    </script>
+    <!--JavaScript-->
+</body>
+</html>

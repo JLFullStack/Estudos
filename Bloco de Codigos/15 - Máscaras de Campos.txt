@@ -1,0 +1,57 @@
+							MÁSCARAS DE CAMPOS NAS INPUTS
+
+
+<<<----------------------------------------------------------------------------------------------------------------------------------------------------------------->>>
+   
+NO FORMULÁRIO:
+
+<form class="needs-validation" novalidate autocomplete="off">
+
+	<!--Telefone-->
+	<div class="form-group">
+
+    		@Html.DisplayNameFor(a => a.TelAluno)
+
+		@ 
+		* Toda vez que o usuário for digitar algo dentro da input a função *onclick="Masks()" será invocada para seguir as regras impostas
+		* id="phone-number" é invocada dentro da função
+		* maxlength="15" define a quantidade máxima de caracteres
+		*@
+    		<input class="form-control" onclick="Masks()" id="phone-number" maxlength="15" type="tel" asp-for="TelAluno" name="TelAluno" required>
+
+    		<div class="invalid-feedback">
+        		É necessário ao menos um número de contato para o Aluno.
+    		</div>
+	</div>
+	<!--Telefone-->
+</form>
+
+
+<<<----------------------------------------------------------------------------------------------------------------------------------------------------------------->>>
+
+NA PÁGINA JS:
+
+//MÁSCARAS
+function Masks() {
+
+    //Phone Mask
+    const phoneNumber = document.querySelector("input#phone-number");
+
+    phoneNumber.addEventListener('keypress', () => {
+        let inputlength = phoneNumber.value.length
+
+        if (inputlength === 0) {
+            phoneNumber.value += '('
+        }
+        else if (inputlength === 3) {
+            phoneNumber.value += ')'
+        }
+        else if (inputlength === 5) {
+            phoneNumber.value += ' '
+        }
+        else if (inputlength === 10) {
+            phoneNumber.value += '-'
+        }
+    })
+}
+

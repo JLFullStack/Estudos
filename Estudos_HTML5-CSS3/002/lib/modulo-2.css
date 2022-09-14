@@ -1,0 +1,202 @@
+/*fonte importada do google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+/*fonte baixada*/
+@font-face {
+    font-family: 'Gabriela';
+    src: url('fonts/Gabriela/Gabriela-Regular.ttf') format('truetype');
+}
+
+/*universal_________________________________________________________________________*/
+a {
+    font-weight: bold;
+    text-shadow: -1px 1px 3px #196e78;
+}
+
+/*variáveis___________________*/
+:root {
+    --color1: #2DD6E6;
+    --color2: #17C2D2;
+    --color3: #02838F;
+    --color4: #07626B;
+
+    --color1-hover: #27b0bd;
+    --color2-hover: #1295a1;
+    --color3-hover: #015e66;
+    --color4-hover: #053f44;
+
+    --fonte-destaque: 'Gabriela', serif;
+    --fonte-titulo: 'lucida sans unicode', 'lucida grande', lucida, sans-serif;
+    --fonte-conteudo: 'Varela Round', sans-serif;
+
+}
+
+
+header,
+main,
+footer{
+    max-width: 1400px;
+    min-width: 800px;
+    margin: auto;
+
+    font-size: 0.8em;
+    background-color: #acf8ff;
+    color: rgb(255, 253, 232);
+
+}
+
+/*header____________________________________________________________________________*/
+header {
+    background-color: #06A5B4;
+    box-shadow: -3px 3px 8px 1px #07636b7c;
+}
+
+nav {
+    padding: 10px 0px 0px 10px;
+}
+
+nav>a {
+    font-size: 1.4em;
+    font-family: var(--fonte-destaque);
+}
+
+a#link-1 {
+    background-color: var(--color1);
+}
+
+a#link-1:hover {
+    background-color: var(--color1-hover);
+    transition-duration: .5s;
+}
+
+a#link-2 {
+    background-color: var(--color2);
+}
+
+a#link-2:hover {
+    background-color: var(--color2-hover);
+    transition-duration: .5s;
+}
+
+a#link-3 {
+    background-color: var(--color3)
+    
+}
+
+a#link-3:hover {
+    background-color: var(--color3-hover);
+    transition-duration: .5s;
+}
+
+a#link-4 {
+    background-color: var(--color4)
+}
+
+a#link-4:hover {
+    background-color: var(--color4-hover);
+    transition-duration: .5s;
+}
+
+a#link-1,
+a#link-2,
+a#link-3,
+a#link-4 {
+    color: white;
+    text-decoration: none;
+
+    box-shadow: -1px 1px 2px 0px #094c527c;
+
+    border-radius: 2px;
+    padding: 2px 30px;
+    margin-right: 5px;
+
+}
+
+header>h1#title {
+    font-size: 3em;
+    color: #83d2da;
+    text-align: center;
+    font-family: var(--fonte-destaque);
+    text-shadow: -1px 1px 3px #196e78;
+
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+
+header>h1#sub-titulo {
+    text-align: end;
+    color: var(--color4);
+    font-size: 1em;
+    font-family: var(--fonte-titulo);
+
+    padding-bottom: 2px;
+    margin: 0px;
+    margin-right: 2% !important;
+}
+
+/*main____________________________________________________________________________*/
+section {
+    display: inline-flex;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+article {
+    width: 40%;
+    background-color: white;
+    box-shadow: -3px 3px 8px 1px #07636b7c;
+
+    padding: 20px;
+
+    border-radius: 10px;
+    border: 3px solid #8f6608a6;
+
+    margin: 3%;
+}
+
+h2,
+h3 {
+    color: #b07e0a;
+    font-family: var(--fonte-titulo);
+}
+
+p,
+ul {
+    font-size: 1.1em;
+    text-indent: 20px;
+    text-align: justify;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: var(--fonte-conteudo);
+}
+
+/*footer____________________________________________________________________________*/
+footer {
+    height: 50px;
+    padding: 30px 0px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #06A5B4;
+    box-shadow: 2px 0px 8px 1px #07636b7c;
+}
+
+footer>a {
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    background-color: var(--color3);
+    box-shadow: -1px 1px 3px 1px #094c5280;
+    font-family: var(--fonte-titulo);
+
+    border-radius: 10px;
+    padding: 10px 6px;
+    margin: 0px 20px;
+}
+
+footer>p>a:hover {
+    background-color: #015e66;
+}

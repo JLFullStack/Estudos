@@ -1,0 +1,103 @@
+							CONFIGURAÇÃO DE RELACIONAMENTO ENTRE ENTIDADES	
+
+Implementando um relacionamento de Um para Um entre as entidades EstudanteModel e EstudanteEndModel:
+
+public class EstudanteModel
+{
+    PROPRIEDADES
+    
+    #region definição da relação de um endereco para um estudante
+    public virtual EstudanteEndcoModel endereco { get; set; }
+    #endregion
+}
+     
+public class EstudanteEndModel 
+{
+    PROPRIEDADES
+
+    #region definição da relação de um estudante para um endereco
+    public virtual Estudante estudante { get; set; }
+    #endregion
+}
+
+<<<----------------------------------------------------------------------------------------------->>>
+
+Implementando um relacionamento de Um para Muitos entre as entidades CategoriaModel e ProdutoModel:
+
+    public class CategoriaModel
+    {
+	PROPRIEDADES
+
+        #region definição da relação de uma categoria para muitos Produtos
+        public List<ProdutoModel> Produtos { get; set; }
+        #endregion
+    }
+
+
+    public class ProdutoModel
+    {
+	PROPRIEDADES
+
+        #region definição da relação de muitos Produtos para uma categoria
+        public int CategoriaId { get; set; }
+        public virtual CategoriaModel Categoria { get; set; }
+
+        #endregion
+    }
+
+<<<----------------------------------------------------------------------------------------------->>>
+
+
+Implementando um relacionamento de Muitos para Muitos entre as entidades Artista e Album:
+
+  É preciso incluir uma propriedade de navegação de coleta em ambas as extremidades. Por exemplo, a classe Artista
+deve ter uma propriedade de navegação de coleta do tipo Album, e a classe Album deve ter uma propriedade de navegação 
+de coleta do tipo Estudante para criar uma relação de muitos para muitos entre eles sem qualquer configuração, como 
+mostrado abaixo:
+
+public partial class Album
+    {
+        public Album()
+        {
+            this.Artista = new HashSet<Artista>();
+        }
+    
+        public int albumId { get; set; }
+        public string albumNome { get; set; }
+        public int ano{ get; set; }
+    
+        public virtual ICollection<Artista> Artista { get; set; } //propriedade de navegação de coleta do tipo Artista
+    }
+
+
+public partial class Artista
+    {
+        public Artista()
+        {
+            this.Album = new HashSet<Album>();
+        }
+    
+        public int artistaId { get; set; }
+        public string nome { get; set; }
+        public string email { get; set; }
+    
+        public virtual ICollection<Album> Album { get; set; } //propriedade de navegação de coleta do tipo Album
+    }
+
+
+A seguir, a classe de contexto deve incluir as entidades Album e Artista
+
+public class FilmeDBContext : DBContext
+{
+    public FilmeDBContext() : base("FilmeDB-DataAnnotations")
+    {
+    }
+
+    public DbSet<Album> Albuns { get; set; }
+    public DbSet<Artista> Artistas { get; set; }
+        
+    protected override void OnModelCreating(DbModelBuilder modelBuilder)
+    {
+        base.OnModelCreating(modelBuilder);
+    }
+}

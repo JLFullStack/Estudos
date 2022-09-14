@@ -1,0 +1,54 @@
+							VALIDAÇÃO PERSONALIZADA DE CAMPOS OBRIGATÓRIOS
+
+
+<<<----------------------------------------------------------------------------------------------------------------------------------------------------------------->>>
+   
+NO FORMULÁRIO:
+
+@* Neste exemplo, a class="needs-validation" será invocada na função JavaScript "CampusValidation()"*@
+@*Foi colocado autocomplete="off" para que não mostrasse dados pessoais digitados anteriormente*@
+
+<form class="needs-validation" novalidate autocomplete="off">
+
+	<!--Nome-->
+	@Html.DisplayNameFor(x => x.NomeAluno)
+	<div class="form-group">
+
+		@*"required" transforma a input em um dado obrigatório*@
+    		<input class="form-control" type="text" asp-for="NomeAluno" name="NomeAluno" required>
+
+		@*Está div é invocada para mostrar a menssagem de feedback caso o usuário não digite o campo obrigatório*@
+		@*Também poderia ser usado "invalid-tooltip" no lugar de "invalid-feedback". Seria mostrada a mesma menssagem, mas de uma forma mais interativa*@
+    		<div class="invalid-feedback">
+        		Defina o nome do Aluno.
+    		</div>
+	</div>
+</form>
+
+
+<<<----------------------------------------------------------------------------------------------------------------------------------------------------------------->>>
+
+NA PÁGINA JS:
+
+//VALIDAÇÃO PERSONALIZADA DE CAMPOS OBRIGATÓRIOS
+(function CampusValidation() {
+    'use strict';
+
+    // Busca todos os formulários aos quais queremos aplicar a validação Bootstrap
+    window.addEventListener('load', function () {
+
+        var formsClass = document.getElementsByClassName('needs-validation');
+
+        // Faz um loop sobre eles e impede o envio
+        var validation = Array.prototype.filter.call(formsClass, function (form) {
+            form.addEventListener('submit', function (event) {
+                if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+            }, false);
+        });
+    }, false);
+})();
+

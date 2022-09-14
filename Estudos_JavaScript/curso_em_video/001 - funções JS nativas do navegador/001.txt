@@ -1,0 +1,53 @@
+							FUNÇÕES JS NATIVAS DO NAVEGADOR
+
+WINDOW:
+
+        //Diferente de outras linguagens, JS não exige ; no final das linhas. Pode ser utilizado, mas não exige. 
+
+        window.alert  ('Menssagem de Alerta')
+        window.confirm('Menssagem de confirmação')
+        window.prompt ('Menssagem prompt, utilizada para receber informação digitada pelo usuário')
+
+
+<<<----------------------------------------------------------------------------------------------------------------------------------------------------------------->>>
+
+CONSOLE:
+O console é um objeto, e o log() é apenas um método deste objeto
+
+Há diversos outros métodos, como:
+
+error();
+warn();
+clear();
+time();
+table();
+count();
+group();
+e o próprio log();
+
+O log() é o método mais usado e tem como sua função emitir mensagens de depuração do sistema diretamente no console do navegador do usuário
+
+Exemplos:
+console.log("Hello World")
+console.info("Hello World")
+console.warn("Hello World")
+console.error("Hello World")
+
+//apresenta uma caixa de dialogo com uma mensagem de alerta
+alert("Caixa com menssagem de alerta") 
+
+//apresenta uma caixa de dialogo com uma mensagem de confirmação e um botão de ok e outro de cancelar
+confirm("Caixa de confirmação")        
+
+//apresenta uma caixa de dialogo com a mensagem definida e uma imput para o usuário digitar algo dentro
+prompt("Digite seu nome")              
+
+
+<<<----------------------------------------------------------------------------------------------------------------------------------------------------------------->>>
+
+
+
+
+
+
+

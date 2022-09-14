@@ -1,0 +1,79 @@
+									PAGINAÇÃO / FILTRO DE BUSCA
+
+Baixar o plugin JQuery DataTable no link abaixo:
+https://datatables.net/
+
+
+<<<----------------------------------------------------------------------------------------------------------------------------------------------------------------->>>
+
+tabalhando paginação e filtro de busca com o link JQuerry: https://datatables.net/download/
+1 - No final da página de download JQuerry, copiar o link e o script CND 
+
+
+2 - colar no cabeçalho da página de Layout do projeto, localizado na pasta Shared das views, o link de importação do CSS do filtro e paginação
+<head>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.12.1/datatables.min.css"/> <!--link de importação do CSS do filtro e paginação-->
+
+</head>
+
+
+3 - colar no final da página de Layout do projeto, acima do site.js, o link de importação do JavaScript de paginação e filtro de busca JQuery
+
+<script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.12.1/datatables.min.js"></script> <!--JavaScript de paginação e filtro de busca JQuery-->
+<script src="~/js/site.js" asp-append-version="true"></script>
+@await RenderSectionAsync("Scripts", required: false)
+
+
+4 - Fazer uma chamada JavaScrip para o projeto estartar o filtro de busca e paginação na index de listagem 
+<<<-----------------------------------------------
+na tabela com a lista de alunos da Index da Model, adicionar uma id para a tabela:
+
+    <!--tabela com a lista de alunos-->
+    <table class="table table-dark table-striped text-center" id="Table-Alunos"> <!--id="Table-Alunos" criada para a paginação-->
+ 
+<<<-----------------------------------------------
+
+colar a função da paginação e busca dentro de site.js localizado em wwwroot com a id adicionada para a table:
+
+$(document).ready( function () {
+    $('#Table-Alunos').DataTable();
+} );
+
+
+5 - traduzir a paginação e busca colando dentro de site.js o código abaixo com a id adicionada para a table:
+
+    $('#Table-Alunos').DataTable({
+        "ordering": true,
+        "paging": true,
+        "searching": true,
+        "oLanguage": {
+            "sEmptyTable": "Nenhum registro encontrado na tabela",
+            "sInfo": "Mostrar _START_ até _END_ de _TOTAL_ registros",
+            "sInfoEmpty": "Mostrar 0 até 0 de 0 Registros",
+            "sInfoFiltered": "(Filtrar de _MAX_ total registros)",
+            "sInfoPostFix": "",
+            "sInfoThousands": ".",
+            "sLengthMenu": "Mostrar _MENU_ registros por pagina",
+            "sLoadingRecords": "Carregando...",
+            "sProcessing": "Processando...",
+            "sZeroRecords": "Nenhum registro encontrado",
+            "sSearch": "Pesquisar",
+            "oPaginate": {
+                "sNext": "Proximo",
+                "sPrevious": "Anterior",
+                "sFirst": "Primeiro",
+                "sLast": "Ultimo"
+            },
+            "oAria": {
+                "sSortAscending": ": Ordenar colunas de forma ascendente",
+                "sSortDescending": ": Ordenar colunas de forma descendente"
+            }
+        }
+    });
+
+<<<----------------------------------------------------------------------------------------------------------------------------------------------------------------->>>
+
+
+
+<<<----------------------------------------------------------------------------------------------------------------------------------------------------------------->>>
+

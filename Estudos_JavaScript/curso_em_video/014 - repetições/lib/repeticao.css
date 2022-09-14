@@ -1,0 +1,68 @@
+html{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.container{
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-block-end: 100%;
+    background: lightgrey;
+    border-bottom-width: 0px;
+}
+
+section{
+    box-shadow: 4px 7px 5px 0px rgb(0 0 0 / 44%);
+}
+
+.page-header{
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    background: #0000007a;
+}
+.page-header h1{
+    color: #ffbf2f;
+    font-weight: 600;
+    text-shadow: -1px 2px 4px #00000096;
+}
+
+.tabuada{
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 20px;
+    padding: 32px;
+    margin-top: 20px;
+    padding: 60px;
+    background: #ffbf2f;
+}
+.form-tabuada{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer{
+    padding-top: 42px;
+    background: #575757;
+    color: white;
+    text-align: center;
+}
+
+h6{
+    font-size: 23px;
+    text-align: center;
+}
+
+.mult{
+    margin-left: 25%;
+    width: 50%;
+    border-radius: 20px;
+    background: #ffffff73;
+    display: flex;
+    justify-content: center;
+    box-shadow: 4px 7px 5px 0px rgb(0 0 0 / 44%)
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>007 - DOM</title>
+
+    <!--CSS-->
+    <style>
+        body {
+            background-color: rgba(63, 63, 63, 0.644);
+            color: rgb(53, 53, 53);
+            font-size: 15pt;
+            align-items: center;
+        }
+
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgba(255, 255, 255, 0.836);
+        }
+
+        p {
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+    <!--CSS-->
+</head>
+
+<body>
+    <h1 id="H1">JavaScript - 007</h1>
+    <p>estudando o DOM - Document Object Model</p>
+    <br />
+    <p id="p2">Aqui vai o resultado</p>
+    <p class="p3">Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div>
+        <button onclick="Alerta()">Clique aqui</button>
+    </div>
+</body>
+
+</html>
+
+<!--JavaScript-->
+<script>
+    /*Com o DOM, através de métodos, é possíel acessar todos os elementos da árvore da view e incluir ações ao chamar uma parte específica desta árvore.
+            
+            Pode-se acessar os elementos da árvore selecionando-a:
+            - Por Marca
+            - por ID
+            - por Nome
+            - por Classe
+            - por Selector (forma mais nova de acesso)
+            */
+
+    //Acessa o primeiro parágrafo dentro da body por TagName
+    var p1 = document.getElementsByTagName("p")[0]
+    document.writeln(`<br/> buscando o texto do primeiro parágrafo:<br/> ${p1.innerText} <br/>`)
+
+    //função chamada ao clicar no botão
+    function Alerta() {
+        //Acessa o segundo parágrafo dentro da body por Id
+        var p2 = document.getElementById("p2")
+        alert(`Texto do segundo parágrafo: ${p2.innerHTML}`)
+    }
+
+    //Para acessar um elemento por class usando o querySelector é necessário colocar como parâmetro o tipo de elemento e logo após o ponto, o nome da class ("tipoElemento.nomeClass") ex:
+    var p3 = document.querySelector("p.p3") //
+    document.writeln(`<br/> texto do terceiro parágrafo: <br/>${p3.innerHTML}`)
+
+    //Para acessar um elemento por Id usando o querySelector é necessário colocar como parâmetro o tipo de elemento e logo após o #, o Id("tipoElemento#Id") ex:
+    var H1 = document.querySelector("h1#H1")
+    H1.style.color = "white"
+</script>
+<!--JavaScript-->

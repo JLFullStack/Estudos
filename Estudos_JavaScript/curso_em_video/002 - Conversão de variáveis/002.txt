@@ -1,0 +1,72 @@
+                                    NOMES IDENTIFICADORES, TIPOS DE VARIÁVEIS EXISTENTES, CONVERSÃO DE VARIÁVEIS
+
+NOMES IDENTIFICADORES
+
+Os nomes identificadores das variáveis:
+
+	podem começar com letra, $ ou _   --> Exemplos: var nomeLetra 
+				                	var $nomeCifrao 
+					        	var _nomeSublinhado
+
+	não podem começar com números     --> Exemplo:  var 3numero
+	podem conter letras ou números    --> Exemplo:  var n3
+	podem conter acentos e símbolos   --> Exemplos: var número
+					        	var número!
+
+	não podem conter espaços          --> Exemplo:  var número 3 (sustituir espaço pelo sublinhado: var número_3)
+
+	não podem ser palavras reservadas 
+	que a linguagem utiliza como      --> Exemplo: alert; prompt; confirm
+	comandos
+
+
+<<<-------------------------------------------------------------------------------------------------------->>>
+
+TIPOS DE VARIÁVEIS EXISTENTES NO JS
+
+	number
+     		valor interno de number: Infinity
+     		valor interno de number: NaN - "Not a Number"
+	string
+	boolean
+	null
+	undefined
+	object
+     		valor interno de object: Array
+	function
+
+	<<<----------------------------------
+
+	NUMBER:
+
+	Variáveis numéricas, em JavaScript são todas do tipo number. Diferente de 
+	outras linguagens, JS não diferencia estas como sendo do tipo inteiro, decimal
+	float ou qualquer outro tipo númerico que exista.
+
+	As variáveis do tipo numer contém dois valores internos muito importantes:
+	Infinity -->
+	NaN      -->
+
+<<<-------------------------------------------------------------------------------------------------------->>>
+
+CONVERSÃO DE VARIÁVEIS = arquivo html - 002
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

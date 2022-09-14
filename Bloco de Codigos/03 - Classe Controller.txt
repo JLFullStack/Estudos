@@ -1,0 +1,59 @@
+										CLASSE CONTROLLER
+
+1- Criar pasta "Controllers" e dentro desta pasta criar uma controller referente à model desejada
+Exemplo:
+
+    public class AlunoController : Controller
+    {
+
+
+        #region MÉTODOS GET //Utilizados para manipular os dados repassados para as views do usuário (Front End)
+
+        public IActionResult Index()
+        {
+            return View(); //para criar views referentes às models é necessário clicar com o botão direito do mouse em cima da View() e clicar em adicionar view
+        }
+
+        public IActionResult Adicionar()
+        {
+            return View();
+        }
+
+        public IActionResult Atualizar()
+        {
+            return View();                            
+        }
+
+        public IActionResult ConfirmarExcluir()
+        {
+            return View(); 
+        }
+
+        public IActionResult Excluir()       
+        {
+            return View(); 
+        }
+        #endregion
+
+        #region MÉTODOS POST //Utilizados no CRUD para manipular, junto aos Repository, os dados cadastrados no banco de dados (Back End)
+
+        #region Adicionar Aluno
+        [HttpPost]
+        public IActionResult Adicionar(Aluno aluno) //Diferente de métodos Get, os métodos post recebem parâmetro
+        {
+            return RedirectToAction("Index");
+        }
+        #endregion
+
+        #region Atualizar Aluno
+        [HttpPost]
+        public IActionResult Atualizar(Aluno aluno)
+        {
+            return RedirectToAction("Index");
+        }
+        #endregion 
+
+
+        #endregion
+    }
+}		

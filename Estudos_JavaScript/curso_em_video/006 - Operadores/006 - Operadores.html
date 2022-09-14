@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>006 - Operadores</title>
+
+    <!--CSS-->
+    <style>
+        body
+        {
+            background-color: rgba(63, 63, 63, 0.644);
+            color: rgb(53, 53, 53);
+            font-size: 15pt;
+            align-items: center;
+        }
+        h1
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            color:rgba(255, 255, 255, 0.836);
+        }
+        p
+        {
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+    <!--CSS-->
+</head>
+<body>
+    <h1>JavaScript - 006</h1>
+    <p>estudando os operadores da linguagem</p>
+
+    <!--JavaScript-->
+    <script>
+        var n1 = Number(window.prompt('Digite um número:'))
+        document.writeln(`número digitado: ${n1} <br/>`)
+
+        /*Além dos operadores aritiméticos existentes em outras linguagem, o JavaScript contém o operador de potenciação, simbolizado por dois asteríscos ** 
+        */
+        document.writeln(`<br/>${n1} elevado a 2 é igual a  ${n1**2} <br/>`)
+
+        
+        /*Já em operadores relacionais, a linguagem contém o operador de identidade. Este operador verifica se um valor atribuído em uma variável é idêntico a de outra variável. Para conciderar atributos idênticos eles devem ter o mesmo valor e serem do mesmo tipo.
+        Este operador é simbolizado por três sinais de iguaidade ===
+        */
+
+        //resultado será false
+        var n2 = 5
+        var n3 = "5"
+        document.writeln(`<br/> n2 = ${n2} "${typeof(n2)}" <br/> n3 = ${n3} "${typeof(n3)}" <br/>`)
+        if(n2 === n3)
+        {
+            document.writeln(`n2 é idêntico a n3`)
+        } 
+        else{document.writeln(`n2 não é idêntico a n3 <br/>`)}
+        
+
+        //resultado será true
+        var n2 = 10
+        var n3 = 10
+        document.writeln(`<br/> n2 = ${n2} "${typeof(n2)}" <br/> n3 = ${n3} "${typeof(n3)}" <br/>`)
+        
+        //trabalhando com operador ternário (condição ? se verdadeiro : se falso)
+        (n2===n3 ? document.writeln(`n2 é idêntico a n3`) : document.writeln(`n2 não é idêntico a n3`))
+    </script>
+    <!--JavaScript-->
+</body>
+</html>

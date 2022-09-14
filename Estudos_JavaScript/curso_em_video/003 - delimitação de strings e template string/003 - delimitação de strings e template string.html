@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>003 - Delimitação de strings</title>
+
+    <!--CSS-->
+    <style>
+        body
+        {
+            background-color: rgba(63, 63, 63, 0.644);
+            color: rgb(53, 53, 53);
+            font-size: 15pt;
+            align-items: center;
+        }
+        h1
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            color:rgba(255, 255, 255, 0.836);
+        }
+        p
+        {
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+    <!--CSS-->
+</head>
+<body>
+    <h1>JavaScript - 003</h1>
+    <p>praticando as formas de delimitar uma string</p>
+
+    <!--JavaScript-->
+    <script>
+         //ao usar window.alert com concatenação, estás três formas mostrarão a escrita = delimitando JavaScript com...
+
+         var js     = "JavaScript"
+         var delim1 = "com aspas duplas." 
+         window.alert("delimitando "+ js +" "+delim1) 
+
+         var js     = 'JavaScript'
+         var delim2 = 'com aspas simples.'
+         window.alert('delimitando '+ js +' '+delim2) 
+
+         var js     = `JavaScript`
+         var delim3 = `com crase.`
+         window.alert(`delimitando `+ js +` `+delim3) 
+         
+         //ao usar window.alert sem concatenação, elas não farão a interpolaçao e mostrarão na tela a escrita = delimitando s d...
+         window.alert("delimitando s d1")
+         
+
+         //utilizando o template string
+         var js     = "JavaScript"
+         var delim1 = "aspas duplas" 
+         var ts     = "template string"
+
+         //necessário utilizar a crase no início e no final da frase para que o template string funcione
+         window.alert(`delimitando ${js} com ${delim1} e utilizando o ${ts}.`)
+    </script>
+    <!--JavaScript-->
+</body>
+</html>

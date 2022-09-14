@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(62 62 62);
+    color: white;
+    text-shadow: 0,0,0;
+}
+
+h1, h2{
+    text-align: center;
+}
+h3{
+    text-decoration: underline;
+}
+
+mark{
+    background-color: rgba(255, 206, 47, 0.589);
+}
+
+.logo{
+    width: 10%;
+}
+
+.logo-js{
+    width: 8%;
+}
+
+video{
+    width: 50%;
+}
+
+a{
+    color: rgb(60 219 227);
+}
