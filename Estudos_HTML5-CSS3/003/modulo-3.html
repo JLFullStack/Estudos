@@ -11,6 +11,32 @@
 
     <link rel="stylesheet" href="../003/lib/modulo-3.css" />
 
+    <style>
+        body {
+            background-image: url("../Mídias/images/wallpapers/dev-wallpaper-001.jpg");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        article#quadrado-group-1 #quad-3{
+            background-image: url("../Mídias/images/wallpapers/dev-wallpaper-002.jpg");
+            background-size: 427px 246px;
+            background-repeat: no-repeat;
+            background-position: -182px center;
+        }
+
+        article#rectangle-group-1 #rec-1,
+        article#rectangle-group-1 #rec-2,
+        article#rectangle-group-1 #rec-3,
+        article#rectangle-group-1 #rec-4,
+        article#rectangle-group-1 #rec-5{
+            background-image: url("../Mídias/images/wallpapers/wallpaper-position-001.jpg");
+            background-size: 150%;
+            background-repeat: no-repeat;
+        }
+    </style>
+
     <title>HTML5 e CSS3</title>
 </head>
 
@@ -28,74 +54,34 @@
 
     <main>
         <section>
-            <article>
-                <h2>Tipos de Caixas</h2>
-                <h3>box-level</h3>
-                <p>Box-level são caixas na html que se separam com quebras de linhas entre elas.</p>
-                <p>exemplos:</p>
-                <ul>
-                    <li>&lt;div&gt;</li>
-                    <li>&lt;h1&gt; - &lt;h6&gt;</li>
-                    <li>&lt;p&gt;</li>
-                    <li>&lt;main&gt;</li>
-                    <li>&lt;header&gt;</li>
-                    <li>&lt;nav&gt;</li>
-                    <li>&lt;article&gt;</li>
-                    <li>&lt;aside&gt;</li>
-                    <li>&lt;footer&gt;</li>
-                    <li>&lt;form&gt;</li>
-                    <li>&lt;video&gt;</li>
-                </ul>
-
-                <h3>inline-level</h3>
-                <p>inline-level são caixas que mesmo ao terminar só dão um espaçamento, mas continuam na mesma linha,
-                    sem
-                    quebras de linhas entre elas.</p>
-                <p>exemplos:</p>
-                <ul>
-                    <li>&lt;span&gt;</li>
-                    <li>&lt;a&gt;</li>
-                    <li>&lt;code&gt;</li>
-                    <li>&lt;small&gt;</li>
-                    <li>&lt;strong&gt;</li>
-                    <li>&lt;em&gt;</li>
-                    <li>&lt;sup&gt; - &lt;sub&gt;</li>
-                    <li>&lt;label&gt;</li>
-                    <li>&lt;button&gt;</li>
-                    <li>&lt;input&gt;</li>
-                    <li>&lt;select&gt;</li>
-                </ul>
+            <article id="quadrado-group-1">
+                <div class="quadrado" id="quad-1">
+                    <p>Utilizando background-color com RGB</p>
+                </div>
+                <div class="quadrado" id="quad-2">
+                    <p>Utilizando background-image com linear-gradient</p>
+                </div>
+                <div class="quadrado" id="quad-3">
+                    <p>Utilizando background-image com url</p>
+                </div>
             </article>
 
-            <article>
-                <h2>Título 2</h2>
-                <h3>sub-título 1</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore voluptatibus ea obcaecati ipsam
-                    accusamus excepturi molestiae vero, repellat, ipsa harum maiores, nobis iste voluptate dolorem
-                    eveniet beatae eaque facere? Voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Dolorem ratione assumenda natus enim quas aut nemo iure omnis fugit amet! Repellendus dolorem
-                    facilis, perspiciatis ullam error dicta facere eum impedit. Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Aut iste natus maxime velit nisi ad nulla dolorem iure est amet hic esse, magni
-                    tempora quam non culpa numquam distinctio! Facilis.</p>
-
-                <h3>sub-título 2</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores laborum ipsam cupiditate
-                    perspiciatis nulla vitae, incidunt expedita recusandae quasi! Sint sit perferendis adipisci dolore
-                    officia consequuntur quo ducimus neque ipsa. Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit. Asperiores quos, expedita distinctio et deleniti consequatur voluptatum obcaecati eveniet quo
-                    minus quibusdam quam tenetur minima rerum libero explicabo tempora enim unde. Lorem ipsum dolor sit
-                    amet consectetur adipisicing elit. Suscipit voluptates quaerat modi reprehenderit quod! Quo illo
-                    impedit iure eveniet soluta consequuntur modi, dolor harum itaque aliquid quam excepturi, atque
-                    blanditiis.</p>
-
-                <h3>sub-título 3</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, facilis enim animi iure sit
-                    perferendis adipisci tempora id non debitis dolorum numquam perspiciatis dolor officia architecto
-                    cum, totam veniam. Illo. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus
-                    aspernatur atque necessitatibus totam consequuntur sed repellat aliquid maxime corrupti illo natus,
-                    quasi exercitationem veniam eligendi quo aut nesciunt. Fuga, distinctio? Lorem ipsum dolor sit amet
-                    consectetur adipisicing elit. Excepturi perspiciatis minima nam voluptatem odit, id, tenetur aliquam
-                    dolor architecto iure ad ducimus eaque possimus! Ad, cumque? In culpa neque at!</p>
+            <article id="rectangle-group-1">
+                <div class="rectangle" id="rec-1">
+                    <p>Utilizando background-position: left top</p>
+                </div>
+                <div class="rectangle" id="rec-2">
+                    <p>Utilizando background-position: right top</p>
+                </div>
+                <div class="rectangle" id="rec-3">
+                    <p>Utilizando background-position: center center</p>
+                </div>
+                <div class="rectangle" id="rec-4">
+                    <p>Utilizando background-position: left bottom</p>
+                </div>
+                <div class="rectangle" id="rec-5">
+                    <p>Utilizando background-position: right bottom</p>
+                </div>
             </article>
         </section>
     </main>
