@@ -6,34 +6,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <!--adiciona icone na guia da página-->
     <link rel="shortcut icon" href="../Mídias/images/icon-study.png" type="image/x-icon">
 
     <link rel="stylesheet" href="../003/lib/modulo-3.css" />
 
     <style>
+        /* body__________________________________ */
         body {
+            /* declaração da background sem a shorthand */
+            background-color: rgb(26 28 25);
             background-image: url("../Mídias/images/wallpapers/dev-wallpaper-001.jpg");
-            background-size: 100%;
+            background-size: cover;
             background-repeat: no-repeat;
-            background-position: center;
+            background-position: left top;
+            background-attachment: fixed;
+
+            /* declaração da background com a shorthand 
+                sequência: color > image > position > repeat > size > attachment */
+            background: 
+                rgb(26 28 25) 
+                url("../Mídias/images/wallpapers/dev-wallpaper-001.jpg")
+                left top
+                no-repeat
+                fixed;
+
+            /* background-size não funciona no shorthand */
+            background-size: cover;
         }
 
-        article#quadrado-group-1 #quad-3{
+        /* article square___________________________________ */
+        article#square-box #square-3{
             background-image: url("../Mídias/images/wallpapers/dev-wallpaper-002.jpg");
-            background-size: 427px 246px;
+            background-size: cover;
             background-repeat: no-repeat;
-            background-position: -182px center;
+            background-position: right top;
         }
 
-        article#rectangle-group-1 #rec-1,
-        article#rectangle-group-1 #rec-2,
-        article#rectangle-group-1 #rec-3,
-        article#rectangle-group-1 #rec-4,
-        article#rectangle-group-1 #rec-5{
+        /* article rectangle_________________________________ */
+        article#rectangle-box #rec-1,
+        article#rectangle-box #rec-2,
+        article#rectangle-box #rec-3,
+        article#rectangle-box #rec-4,
+        article#rectangle-box #rec-5{
             background-image: url("../Mídias/images/wallpapers/wallpaper-position-001.jpg");
             background-size: 150%;
             background-repeat: no-repeat;
+        }
+
+        /* article position_________________________________ */
+        article#position-box{
+            background-image: url("../Mídias/images/wallpapers/target001.png");
+        }
+
+        div#content-position{
+            background-image: url("../Mídias/images/wallpapers/target001.png");
         }
     </style>
 
@@ -42,31 +77,37 @@
 
 <body>
     <header>
-        <h1 id="title">Curso em Vídeo - HTML5 e CSS3 - Módulo 3</h1>
-        <h1 id="sub-titulo">conteúdos aprendidos no módulo 3 deste curso</h1>
-        <nav>
+        <nav class="nav-pills">
             <a id="link-1" href="#">Home</a>
             <a id="link-2" href="../001/modulo-1.html">Módulo 1</a>
             <a id="link-3" href="../002/modulo-2.html">Módulo 2</a>
             <a id="link-4" href="#">Módulo 4</a>
         </nav>
+
+        <h1 id="title">Curso em Vídeo - HTML5 e CSS3 - Módulo 3</h1>
+        <h1 id="sub-title">conteúdos aprendidos no módulo 3 deste curso</h1>
     </header>
 
     <main>
-        <section>
-            <article id="quadrado-group-1">
-                <div class="quadrado" id="quad-1">
+        <section class="container">
+
+            <h2>Trabalhando com o background-image</h2>
+
+            <article class="content" id="square-box">
+                <div class="square" id="square-1">
                     <p>Utilizando background-color com RGB</p>
                 </div>
-                <div class="quadrado" id="quad-2">
+                <div class="square" id="square-2">
                     <p>Utilizando background-image com linear-gradient</p>
                 </div>
-                <div class="quadrado" id="quad-3">
+                <div class="square" id="square-3">
                     <p>Utilizando background-image com url</p>
                 </div>
             </article>
 
-            <article id="rectangle-group-1">
+            <h2>Trabalhando com o background-position</h2>
+
+            <article class="content" id="rectangle-box">
                 <div class="rectangle" id="rec-1">
                     <p>Utilizando background-position: left top</p>
                 </div>
@@ -83,6 +124,12 @@
                     <p>Utilizando background-position: right bottom</p>
                 </div>
             </article>
+
+            <h2>Trabalhando com o position</h2>
+
+            <article class="container" id="position-box">
+                <div class="content" id="content-position"></div>
+            </article>
         </section>
     </main>
 
@@ -90,6 +137,12 @@
         <a href="../002/modulo-2.html" rel="prev">
             <span class="glyphicon glyphicon-menu-lef"></span>
             módulo 2
+        </a>
+
+        <a href="../003/parallax.html" target="_blank"
+        rel="external">
+            <span class="glyphicon glyphicon-menu-lef"></span>
+            Efeito Parallax
         </a>
 
         <a href="#" rel="prev">

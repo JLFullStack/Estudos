@@ -1,0 +1,58 @@
+/*fonte importada do google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+/*fonte baixada*/
+@font-face {
+    font-family: 'Gabriela';
+    src: url('fonts/Gabriela/Gabriela-Regular.ttf') format('truetype');
+}
+
+/*GLOBAL_______________________________________________________________________________________________________________________________*/
+
+/*variáveis paleta de cores e fontes___________________*/
+:root {
+    --color1: #2DD6E6;
+    --color2: #17C2D2;
+    --color3: #02838F;
+    --color4: #07626B;
+
+    --color1-hover: #27b0bd;
+    --color2-hover: #1295a1;
+    --color3-hover: #015e66;
+    --color4-hover: #053f44;
+
+    --font-destaque: 'Gabriela', serif;
+    --font-title: 'lucida sans unicode', 'lucida grande', lucida, sans-serif;
+    --font-content: 'Varela Round', sans-serif;
+}
+
+/* tags ______________________________________________*/
+a {
+    font-weight: bold;
+    text-shadow: -1px 1px 3px #196e78;
+}
+
+h2,
+h3 {
+    font-family: var(--font-title);
+}
+
+p,
+ul {
+    font-size: 1.2em;
+    text-indent: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.575);
+    font-family: var(--font-content);
+}
+
+/* BODY_____________________________________________________________________________________________________________________________ */
+body{
+    background-color: rgb(63, 62, 62);
+}
+/* HEADER___________________________________________________________________________________________________________________________ */
+/* MAIN_____________________________________________________________________________________________________________________________ */
+/* SECTION__________________________________________________________________________________________________________________________ */
+/* ARTICLE__________________________________________________________________________________________________________________________ */
+/* FOOTER___________________________________________________________________________________________________________________________ */
