@@ -1,3 +1,5 @@
+@charset "UTF8";
+
 /*fonte importada do google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
@@ -11,48 +13,165 @@
 
 /*variáveis paleta de cores e fontes___________________*/
 :root {
-    --color1: #2DD6E6;
-    --color2: #17C2D2;
-    --color3: #02838F;
-    --color4: #07626B;
+    --pink: #F285B8;
+    --purple: #7A6FBF;
+    --green: #037F8C;
+    --yellow: #ff9819;
+    --brown: #A66946;
+    --orange: #D98C4A;
+    --darkblue: #03738C;
+    --darkgreen: #3C4022;
 
-    --color1-hover: #27b0bd;
-    --color2-hover: #1295a1;
-    --color3-hover: #015e66;
-    --color4-hover: #053f44;
+    --pink-hover: #a5225f;
+    --purple-hover: #46406d;
+    --green-hover: #01454d;
+    --yellow-hover: #af6203;
+    --brown-hover: #6d3c20;
+    --orange-hover: #885120;
+    --darkblue-hover: #005d72;
+    --darkgreen-hover: #1d2007;
 
     --font-destaque: 'Gabriela', serif;
-    --font-title: 'lucida sans unicode', 'lucida grande', lucida, sans-serif;
     --font-content: 'Varela Round', sans-serif;
+    --font-title: 'lucida sans unicode', 'lucida grande', lucida, sans-serif;
 }
 
 /* tags ______________________________________________*/
-a {
-    font-weight: bold;
-    text-shadow: -1px 1px 3px #196e78;
+*{
+    margin: 0px;
+    padding: 0px;
 }
 
-h2,
-h3 {
+h1,
+h2 {
+    color: white;
     font-family: var(--font-title);
+    text-shadow: -1px 1px 2px #00000057;
 }
 
-p,
-ul {
+p{
+    color: white;
     font-size: 1.2em;
     text-indent: 20px;
-    font-weight: bold;
-    text-align: center;
-    color: rgba(0, 0, 0, 0.575);
+    text-align: justify;
     font-family: var(--font-content);
+    text-shadow: -1px 1px 2px #00000057;
+}
+
+strong{
+    font-family: var(--font-destaque);
 }
 
 /* BODY_____________________________________________________________________________________________________________________________ */
-body{
-    background-color: rgb(63, 62, 62);
+html, body{
+    min-height: 100vh;
+    background-color: rgb(42 42 42);
 }
+
 /* HEADER___________________________________________________________________________________________________________________________ */
+header{
+    top: 0;
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    background-color: #03738cc9;
+}
+
+    header h1{
+        padding-top: 20px;
+        font-size: 2.5em;
+        font-variant: small-caps;
+    }
+
+    header p{
+        text-align: end;
+        padding: 0px 20px 20px 0px;
+    }
 /* MAIN_____________________________________________________________________________________________________________________________ */
-/* SECTION__________________________________________________________________________________________________________________________ */
-/* ARTICLE__________________________________________________________________________________________________________________________ */
+/* Section______________________________________________________ */
+section{
+    line-height: 2em;
+}
+
+/* Article_______________________ */
+article .content-parallax{
+    padding-top: 44vh;
+    padding-bottom: 44vh;
+
+    background-color: rgb(42 42 42);
+    box-shadow:inset 0 0 13px 2px rgb(0 0 0 / 36%);
+}
+
+    .content-parallax h2{
+        padding-top: 4vh;
+        padding-bottom: 4vh;
+
+        text-align: center;
+        background-color: rgb(42 42 42 / 90%);
+        box-shadow: 0px 0px 5px 1px #00000052;
+    }
+
+article .content-normal{
+    padding: 10vh 40vh 10vh 40vh;
+    color: rgb(48, 48, 48);
+    background-color: white;
+}
+
+    .content-normal p{
+        text-shadow: none;
+        padding-bottom: 1em;
+        color: rgb(48, 48, 48);
+    }
+
 /* FOOTER___________________________________________________________________________________________________________________________ */
+footer{
+    padding: 30px 0px 30px 0px;
+    background-color: #03738cf2;
+}
+
+    footer p{
+        text-align: center;
+    }
+
+    footer a{
+        color: var(--yellow);
+        text-decoration: none;
+    }
+
+    footer a:hover{
+        color: var(--yellow-hover);
+        text-decoration: underline;
+    }
+
+/* MEDIA QUERIES____________________________________________________________________________________________________________________ */
+@media only screen and (max-width: 1024px) {
+    article .content-normal{
+        padding: 10vh;
+    }
+
+    h1{
+        font-size: 2em !important;
+    }
+
+    h2 {
+        font-size: 1.2em !important;
+    }
+    
+    p{
+        font-size: 1em !important;
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    h1{
+        font-size: 1.5em !important;
+    }
+
+    h2 {
+        font-size: 1em !important;
+    }
+    
+    p{
+        font-size: 0.8em !important;
+    }
+}

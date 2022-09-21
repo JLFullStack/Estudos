@@ -19,46 +19,98 @@
     <link rel="stylesheet" href="../003/lib/parallax.css" />
 
     <style>
-        /* body__________________________________ */
-        body {
+        /* BODY__________________________ */
+        /* body {
             background:
-                rgb(26 28 25) 
-                url("../Mídias/images/wallpapers/wallpaper-capadocia-001.jpg") 
-                left 
-                top 
-                no-repeat 
-                fixed;
-
+                rgb(63, 62, 62) url("../Mídias/images/wallpapers/wallpaper-maldivas.jpg") left top no-repeat fixed;
             background-size: cover;
+        } */
+
+        /* MAIN____________________________ */
+        article #parallax-capadocia{
+        background: rgb(42 42 42) url("../Mídias/images/wallpapers/wallpaper-capadocia.jpg") top center no-repeat fixed;
+        background-size: cover;
         }
+
+        article #parallax-maldivas{
+        background: rgb(42 42 42) url("../Mídias/images/wallpapers/wallpaper-maldivas.jpg") center center no-repeat fixed;
+        background-size: cover;
+        }
+
+        article #parallax-bariloche{
+        background: rgb(42 42 42) url("../Mídias/images/wallpapers/wallpaper-bariloche.jpg") top center no-repeat fixed;
+        background-size: cover;
+        }
+
     </style>
 </head>
 
 <body>
     <header>
-
+        <h1>Viagens ao Redor do Mundo</h1>
+        <p>Estudando o Efeito Parallax</p>
     </header>
 
     <main>
         <section>
-            <article>
-                <p>
-
-                </p>
+            <article id="content-capadocia">
+                <div class="content-parallax" id="parallax-capadocia">
+                    <h2>CAPADÓCIA</h2>
+                </div>
+                <div class="content-normal">
+                    <p >
+                        A <strong>Capadócia</strong> não é uma cidade da Turquia e sim uma região histórica formada por
+                        várias cidades e
+                        vilas turcas e famosa pelos voos de balão de ar quente sobre as cidades criadas em meio a formações
+                        geológicas de pedras vulcânicas como as cavernas e as chaminés de fada.
+                    </p>
+                </div>
             </article>
-        </section>
 
-        <section>
-            <article>
-                <p>
+            <article id="content-maldivas">
+                <div class="content-parallax" id="parallax-maldivas">
+                    <h2>MALDIVAS</h2>
+                </div>
+                <div class="content-normal">
+                    <p>
+                        As <strong>Maldivas</strong> estão na lista de lugares em que todos sonham visitar pelo menos uma
+                        vez na vida. As
+                        praias perfeitas com areia branca e um mar com tonalidades marcantes e os bangalôs luxuosos sobre o
+                        mar formam um cenário inesquecível e romântico!
+                    </p>
 
-                </p>
+                    <p>
+                        Não é à toa que o arquipélago é o destino dos sonhos
+                        de celebridades e casais em lua de mel.
+                    </p>
+                </div>
+            </article>
+
+            <article id="content-bariloche">
+                <div class="content-parallax" id="parallax-bariloche">
+                    <h2>BARILOCHE</h2>
+                </div>
+                <div class="content-normal">
+                    <p>
+                        Oficialmente <strong>San Carlos de Bariloche</strong> é uma cidade da Argentina, localizada na província de Rio
+                        Negro, junto à Cordilheira dos Andes, na fronteira com o Chile.
+                    </p>
+
+                    <p>
+                        Com uma localização privilegiada de belezas naturais, é rodeada por lagos, como o Nahuel Huapi e
+                        Gutiérrez, e montanhas, como Centro Catedral e o Cerro López.
+                    </p>
+                </div>
             </article>
         </section>
     </main>
 
     <footer>
-
+        <p>Está página faz parte do Módulo 3 do curso de 
+            <strong>
+                <a href="../003/modulo-3.html" target="_blank" rel="external">CSS3 e HTML5</a>
+            </strong>
+        </p>
     </footer>
 </body>
 
