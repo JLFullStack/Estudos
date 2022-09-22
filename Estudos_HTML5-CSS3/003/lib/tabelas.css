@@ -1,0 +1,226 @@
+/*fonte importada do google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+/*fonte baixada*/
+@font-face {
+    font-family: 'Gabriela';
+    src: url('fonts/Gabriela/Gabriela-Regular.ttf') format('truetype');
+}
+
+/*GLOBAL_______________________________________________________________________________________________________________________________*/
+
+/*variáveis paleta de cores e fontes___________________*/
+:root {
+    --yellow: #ff9819;
+    --yellow-hover: #af6203;
+
+    --font-destaque: 'Gabriela', serif;
+    --font-title: 'lucida sans unicode', 'lucida grande', lucida, sans-serif;
+    --font-content: 'Varela Round', sans-serif;
+}
+
+/* tags ______________________________________________*/
+a {
+    font-weight: bold;
+}
+
+h2{
+    margin-bottom: 5px;
+}
+
+h3{
+    font-size: 1.3em;
+}
+
+h2,
+h3 {
+    font-weight: bold;
+    font-family: var(--font-title);
+}
+
+p{
+    font-size: 1.2em;
+    text-indent: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.575);
+    font-family: var(--font-content);
+}
+
+strong{
+    font-family: var(--font-destaque);
+}
+
+/*BODY________________________________________________________________________________________________________________________________*/
+body {
+    margin: 0px;
+    min-width: 600px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(122, 122, 122);
+}
+
+/*HEADER______________________________________________________________________________________________________________________________*/
+header{
+    background-color: rgba(99, 99, 99, 0.575);
+}
+
+    header #title {
+        color: white;
+        font-size: 3em;
+        margin-top: 0px;
+        padding-top: 20px;
+        text-align: center;
+        font-variant: small-caps;
+        font-family: var(--font-destaque);
+        text-shadow: -1px 1px 3px #00000096;
+    }
+
+    header #sub-title {
+        text-align: end;
+        color: white;
+        font-size: 1em;
+        font-family: var(--font-title);
+
+        padding: 0px 10px 10px 0px;
+    }
+
+/*MAIN________________________________________________________________________________________________________________________________*/
+main{
+    gap: 20px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+/* Section_________________________________________________________________ */
+section{
+    width: 60%;
+    margin: 20px;
+    padding: 40px;
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.925);
+    border:solid 3px rgb(99, 99, 99);
+}
+
+/* Article_________________________________________________________________ */
+article{
+    display: flex;
+    flex-direction: column;
+}
+
+article pre{
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+article table{
+    margin: 0% 15%;
+    position: relative;
+    width: 70% !important;
+    border: solid 3px black;
+}
+
+    table caption{
+        font-weight: bold;
+        color: white;
+        background-color: #232323;
+    }
+
+    table thead,
+    table tfoot{
+        color: white;
+        background-color: grey;
+    }
+
+        thead tr th{
+            position: sticky;
+            top: -2px;
+            background-color: grey !important;
+        }
+
+        table td{
+            padding: 8px !important;
+            vertical-align: middle;
+        }
+
+        table .table-number{
+            width: 15%;
+            text-align: end;
+        }
+
+/*FOOTER________________________________________________________________________________________________________________________________*/
+
+footer{
+    padding: 30px 0px 30px 0px;
+    background-color: rgba(99, 99, 99, 0.575);
+}
+
+    footer p{
+        font-weight: normal;
+        color: white;
+        text-align: center;
+    }
+
+    footer a{
+        color: var(--yellow);
+        text-decoration: none;
+    }
+
+    footer a:hover{
+        color: var(--yellow-hover);
+        text-decoration: underline;
+    }
+
+/* MEDIA QUERIES____________________________________________________________________________________________________________________ */
+@media only screen and (max-width: 1024px) {
+
+    article .content-normal{
+        padding: 10vh;
+    }
+
+    h1{
+        font-size: 2em !important;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    h3{
+        font-size: 1em;
+    }
+    
+    p{
+        font-size: 0.8em !important;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    section{
+        width: 80%;
+    }
+
+    article table{
+        margin: 0% 5%;
+        width: 90% !important;
+    }
+
+    h1{
+        font-size: 1.5em !important;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    h3{
+        font-size: 0.8em;
+    }
+    
+    p{
+        font-size: 0.6em !important;
+    }
+}
+
