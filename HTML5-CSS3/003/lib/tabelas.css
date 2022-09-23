@@ -202,6 +202,10 @@ footer{
         width: 80%;
     }
 
+    article .container{
+        overflow-x: auto;
+    }
+
     article table{
         margin: 0% 5%;
         width: 90% !important;

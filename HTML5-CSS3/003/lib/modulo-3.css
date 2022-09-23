@@ -258,29 +258,61 @@ article#position-box{
 /*FOOTER________________________________________________________________________________________________________________________________*/
 footer {
     display: flex;
+    flex-direction: column;
+
+    height: 200px;   
+    padding: 30px 20px;
+    margin: 0px;
+
+    background-color: rgba(0, 0, 0, 0.781);
+}
+
+footer p{
+    color: white;
+}
+
+footer #list{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer #list a{
+    color: #ff9819;
+    text-shadow: none;
+    text-decoration: none;
+}
+
+footer #list a:hover{
+    color: #af6203;
+    text-shadow: none;
+    text-decoration: underline;
+
+}
+
+footer #modulos{
+    display: flex;
     align-items: center;
     justify-content: space-between;
 
-    height: 100px;   
-    padding: 30px 20px;
-    margin: 0px;
+    margin: 40px 0px;
 }
 
-footer>a {
-    color: white;
-    font-size: 1.2em;
-    text-decoration: none;
-    background-color: var(--color3);
-    box-shadow: -1px 1px 3px 1px #094c5280;
-    font-family: var(--font-title);
+    footer #modulos a {
+        padding: 10px 6px;
+        margin-right: 5px;
+        border-radius: 10px;
 
-    border-radius: 10px;
-    padding: 10px 6px;
-    margin-right: 5px;
-}
+        color: white;
+        font-size: 1.2em;
+        text-decoration: none;
+        font-family: var(--font-title);
+        background-color: var(--color3);
+        box-shadow: -1px 1px 3px 1px #094c5280;
+    }
 
-footer>a:hover{
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.651);
-    background-color: var(--color3-hover);
-}
+    footer #modulos a:hover{
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.651);
+        background-color: var(--color3-hover);
+    }

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML e CSS3</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../003/lib/tabelas.css" />
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Estudos Sobre Tabelas</h1>
+        <p id="sub-title">CSS3 e HTML5</p>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2 class="text-center">Anatomia de tabelas Simples</h2>
+                <h3>Hierarquia:</h3>
+                <pre>
+                    table                = tabela
+                        table-row        = tr(linhas da tabela)
+                            table-header = th(cabeçalho da tabela)
+                            table-data   = td(dados da tabela)
+                </pre>
+
+                <h3>Exemplo da estrutura de uma tabela simples:</h3>
+                <pre>
+                    &lt;table&gt; 
+                        &lt;tr&gt; 
+                            &lt;td&gt;A1&lt;td&gt;
+                            &lt;td&gt;B1&lt;td&gt;
+                            &lt;td&gt;C1&lt;td&gt; 
+                        &lt;tr&gt;
+
+                        &lt;tr&gt; 
+                            &lt;td&gt;A2&lt;td&gt;
+                            &lt;td&gt;B2&lt;td&gt;
+                            &lt;td&gt;C2&lt;td&gt; 
+                        &lt;tr&gt;
+
+                        &lt;tr&gt; 
+                            &lt;td&gt;A3&lt;td&gt;
+                            &lt;td&gt;B3&lt;td&gt;
+                            &lt;td&gt;C3&lt;td&gt; 
+                        &lt;tr&gt;
+                    &lt;table&gt;
+                </pre>
+
+                <h3>Resultado:</h3>
+                <div class="container">
+                    <table class="table table-bordered border-dark table-striped text-center">
+                        <thead>
+                            <tr>
+                                <th scope="col">Célula 1</th>
+                                <th scope="col">Célula 2</th>
+                                <th scope="col">Célula 3</th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td>A1</td>
+                            <td>B1</td>
+                            <td>C1</td>
+                        </tr>
+                        <tr>
+                            <td>A2</td>
+                            <td>B2</td>
+                            <td>C2</td>
+                        </tr>
+                        <tr>
+                            <td>A3</td>
+                            <td>B3</td>
+                            <td>C3</td>
+                        </tr>
+                    </table>
+                </div>
+            </article>
+        </section>
+
+        <section>
+            <article>
+                <h2 class="text-center">Anatomia de tabelas Grandes</h2>
+                <h3>Hierarquia:</h3>
+                <pre>
+                    table
+                        thead
+                            tr (th, td)
+
+                        tbody
+                            tr (th, td)
+
+                        tfoot 
+                            tr (th, td)
+                </pre>
+
+                <h3>Exemplo da estrutura de uma tabela grande:</h3>
+                <pre>
+                    &lt;table&gt;
+                        &lt;capition&gt;LISTA DE USUÁRIOS&lt;/caption&gt;
+                        &lt;thead&gt; 
+                            &lt;tr&gt; 
+                                &lt;th&gt;#&lt;/th&gt;
+                                &lt;th&gt;nome&lt;/th&gt;
+                                &lt;th&gt;sobrenome&lt;/th&gt;
+                                &lt;th&gt;idade&lt;/th&gt; 
+                            &lt;/tr&gt;
+                        &lt;/thead&gt; 
+
+                        &lt;tbody&gt; 
+                            &lt;tr&gt; 
+                                &lt;th&gt;1&lt;/th&gt;
+                                &lt;td&gt;Lucas&lt;/td&gt;
+                                &lt;td&gt;Araújo&lt;/td&gt;
+                                &lt;td&gt;31&lt;/td&gt; 
+                            &lt;/tr&gt;
+
+                            &lt;tr&gt; 
+                                &lt;th&gt;2&lt;/th&gt;
+                                &lt;td&gt;David&lt;/td&gt;
+                                &lt;td&gt;Araújo&lt;/td&gt;
+                                &lt;td&gt;3&lt;/td&gt; 
+                            &lt;/tr&gt;
+
+                            &lt;tr&gt; 
+                                &lt;th&gt;3&lt;/th&gt;
+                                &lt;td&gt;Daphne&lt;/td&gt;
+                                &lt;td&gt;Araújo&lt;/td&gt;
+                                &lt;td&gt;8&lt;/td&gt; 
+                            &lt;/tr&gt;
+                        &lt;/tbody&gt;
+                        
+                        &lt;tfoot&gt;
+                            &lt;th&gt;Total de usuários&lt;/th&gt;
+                            &lt;td&gt;3&lt;/td&gt;
+                        &lt;/tfoot&gt;
+                    &lt;/table&gt;
+                </pre>
+                
+                <h3>Resultado:</h3>
+                <div class="container">
+                    <table class="table table-bordered border-dark text-center">
+                        <caption class="caption-top text-center">LISTA DE USUÁRIOS</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Nome</th>
+                                <th scope="col">Sobrenome</th>
+                                <th scope="col">Idade</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Lucas</td>
+                                <td>Araújo</td>
+                                <td class="table-number">31</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>David</td>
+                                <td>Araújo</td>
+                                <td class="table-number">3</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Daphne</td>
+                                <td>Araújo</td>
+                                <td class="table-number">8</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <th scope="row" colspan="3" class="border-0 text-start">Total de usuários</th>
+                            <td class="table-number border-0">3</td>
+                        </tfoot>
+                    </table>
+                </div>
+            </article>
+        </section>
+
+        <section>
+            <article>
+                <h2 class="text-center">Mesclagem de células</h2>
+                <h3 class="text-center">Exemplo de tabelas usando mesclagem de células</h3>
+                <h3>Tabela 1:</h3>
+                <div class="container">
+                    <table class="table  table-striped table-bordered border-dark align-middle text-center">
+                        <caption class="caption-top text-center">FILMES FAVORITOS</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Grupos</th>
+                                <th scope="col">Nomes</th>
+                                <th scope="colgroup" colspan="3">filmes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="rowgroup" rowspan="3" class="bg-white">Mulheres</th>
+                                <td>Ana Maria Santos</td>
+                                <td>Allen</td>
+                                <td>Rambo</td>
+                                <td>Vingadores</td>
+                            </tr>
+                            <tr>
+                                <td>Beatriz Souza</td>
+                                <td>Hulk</td>
+                                <td>inception</td>
+                                <td>Batman</td>
+                            </tr>
+                            <tr>
+                                <td>Cláudia Melo</td>
+                                <td>Oblivion</td>
+                                <td>Matrix</td>
+                                <td>Big Hero</td>
+                            </tr>
+                            <tr>
+                                <th scope="rowgroup" rowspan="3">Homens</th>
+                                <td>Bruno Mendonça</td>
+                                <td>intocáveis</td>
+                                <td>Amnésia</td>
+                                <td>Gladiador</td>
+                            </tr>
+                            <tr>
+                                <td>Daniel Lourenço</td>
+                                <td>Wall-E</td>
+                                <td>Oldboy</td>
+                                <td>Dangal</td>
+                            </tr>
+                            <tr>
+                                <td>Fabiano Mota</td>
+                                <td>Star Wars 5</td>
+                                <td>Taxi Driver</td>
+                                <td>Toy Story</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+
+            <article>
+                <h3>Tabela 2:</h3>
+                <div class="container">
+                    <table class="table  table-striped table-bordered border-dark align-middle text-center">
+                        <caption class="caption-top text-center">TABELA DE NOTAS</caption>
+                        <thead class="align-middle">
+                            <tr>
+                                <th scope="col" rowspan="2">Área</th>
+                                <th scope="col" rowspan="2">Disciplinas</th>
+                                <th scope="colgroup" colspan="2">Notas</th>
+                                <th scope="col" rowspan="2">Média</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">Nota 1</th>
+                                <th scope="row">Nota 2</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="rowgroup" rowspan="4">Exatas</th>
+                                <td>Matemática</td>
+                                <td class="table-number">0.0</td>
+                                <td class="table-number">0.0</td>
+                                <td class="table-number">0.0</td>
+                            </tr>
+                            <tr>
+                                <td>Física</td>
+                                <td class="table-number">0.0</td>
+                                <td class="table-number">0.0</td>
+                                <td class="table-number">0.0</td>
+                            </tr>
+                            <tr>
+                                <td>Química</td>
+                                <td class="table-number">0.0</td>
+                                <td class="table-number">0.0</td>
+                                <td class="table-number">0.0</td>
+                            </tr>
+                            <tr>
+                                <td>Biologia</td>
+                                <td class="table-number">0.0</td>
+                                <td class="table-number">0.0</td>
+                                <td class="table-number">0.0</td>
+                            </tr>
+                            <thead>
+                                <tr>
+                                    <th scope="row" colspan="4" class="border-0 text-start">Média de Exatas</th>
+                                    <td class="border-0 table-number">0.0</td>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <th scope="rowgroup" rowspan="2">Humanas</th>
+                                <td>História</td>
+                                <td class="table-number">0.0</td>
+                                <td class="table-number">0.0</td>
+                                <td class="table-number">0.0</td>
+                            </tr>
+                            <tr>
+                                <td>Geografia</td>
+                                <td class="table-number">0.0</td>
+                                <td class="table-number">0.0</td>
+                                <td class="table-number">0.0</td>
+                            </tr>
+                            <thead>
+                                <tr>
+                                    <th scope="row" colspan="4" class="border-0 text-start">Média de Humanas</th>
+                                    <td class="border-0">0.0</td>
+                                </tr>
+                            </thead>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Está página faz parte do Módulo 3 do curso de
+            <strong>
+                <a href="../003/modulo-3.html" target="_blank" rel="external">CSS3 e HTML5</a>
+            </strong>
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
