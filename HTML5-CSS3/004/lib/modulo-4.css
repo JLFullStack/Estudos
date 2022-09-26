@@ -1,0 +1,309 @@
+/*fonte importada do google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+/*fonte baixada*/
+@font-face {
+    font-family: 'Gabriela';
+    src: url('fonts/Gabriela/Gabriela-Regular.ttf') format('truetype');
+}
+
+/*GLOBAL_______________________________________________________________________________________________________________________________*/
+
+/*variáveis paleta de cores e fontes___________________*/
+:root {
+    --yellow: #ff9819;
+    --yellow-hover: #af6203;
+
+    --color1: #2DD6E6;
+    --color2: #17C2D2;
+    --color3: #02838F;
+    --color4: #07626B;
+    --color5: #064d53;
+    --color6: #05373b;
+
+    --color1-hover: #27b0bd;
+    --color2-hover: #1295a1;
+    --color3-hover: #015e66;
+    --color4-hover: #053f44;
+    --color5-hover: #043236;
+    --color6-hover: #032224;
+
+    --font-destaque: 'Gabriela', serif;
+    --font-title: 'lucida sans unicode', 'lucida grande', lucida, sans-serif;
+    --font-content: 'Varela Round', sans-serif;
+}
+
+/* tags ______________________________________________*/
+a {
+    font-weight: bold;
+    text-shadow: -1px 1px 3px #196e78;
+}
+
+h2{
+    margin-bottom: 5px;
+}
+
+h3{
+    font-size: 1.3em;
+}
+
+h2,
+h3 {
+    font-weight: bold;
+    font-family: var(--font-title);
+}
+
+p{
+    font-size: 1.2em;
+    text-indent: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.575);
+    font-family: var(--font-content);
+}
+
+strong{
+    font-family: var(--font-destaque);
+}
+
+/*HEADER______________________________________________________________________________________________________________________________*/
+header{
+    background-color: rgba(99, 99, 99, 0.575);
+}
+
+/* nav _______________________________________________________________*/
+nav {
+    gap: 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    
+    padding: 10px 0px 0px 10px;
+}
+
+nav>a {
+    font-size: 1.2em;
+    font-family: var(--font-destaque);
+}
+
+    a#link-1 {
+        background-color: var(--color1);
+    }
+
+        a#link-1:hover {
+            background-color: var(--color1-hover)
+        }
+
+    a#link-2 {
+        background-color: var(--color2);
+    }
+
+        a#link-2:hover {
+            background-color: var(--color2-hover);
+        }
+
+    a#link-3 {
+        background-color: var(--color3)
+    }
+
+        a#link-3:hover {
+            background-color: var(--color3-hover);
+        }
+
+    a#link-4 {
+        background-color: var(--color4)
+    }
+
+        a#link-4:hover {
+            background-color: var(--color4-hover);
+        }
+
+    a#link-5 {
+        background-color: var(--color5)
+    }
+
+        a#link-5:hover {
+            background-color: var(--color5-hover);
+        }
+
+    a#link-6 {
+        background-color: var(--color6)
+    }
+
+        a#link-6:hover {
+            background-color: var(--color6-hover);
+        }
+
+    a#link-1,
+    a#link-2,
+    a#link-3,
+    a#link-4,
+    a#link-5,
+    a#link-6 {
+        color: white;
+        text-decoration: none;
+
+        box-shadow: -1px 1px 2px 0px #094c527c;
+
+        border-radius: 2px;
+        padding: 2px 30px;
+        margin-right: 5px;
+    }
+
+
+/* title / sub-title _________________________________________________________*/
+    header #title {
+        color: white;
+        font-size: 3em;
+        margin-top: 0px;
+        padding-top: 20px;
+        text-align: center;
+        font-variant: small-caps;
+        font-family: var(--font-destaque);
+        text-shadow: -1px 1px 3px #00000096;
+    }
+
+    header #sub-title {
+        text-align: end;
+        color: white;
+        font-size: 1em;
+        font-family: var(--font-title);
+
+        margin-right: 2%;
+        padding: 0px 10px 10px 0px;
+        padding-bottom: 2px;
+    }
+
+/*BODY________________________________________________________________________________________________________________________________*/
+body {
+    margin: 0px;
+    min-width: 600px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(122, 122, 122);
+}
+
+/*MAIN________________________________________________________________________________________________________________________________*/
+main{
+    gap: 20px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+/* Section_________________________________________________________________ */
+section{
+    width: 60%;
+    margin: 20px;
+    padding: 40px;
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.925);
+    border:solid 3px rgb(99, 99, 99);
+}
+
+/*FOOTER________________________________________________________________________________________________________________________________*/
+footer {
+    display: flex;
+    flex-direction: column;
+
+    height: 200px;   
+    padding: 30px 20px;
+    margin: 0px;
+
+    background-color: rgba(0, 0, 0, 0.781);
+}
+
+footer p{
+    color: white;
+}
+
+footer #list{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer #list a{
+    color: #ff9819;
+    text-shadow: none;
+    text-decoration: none;
+}
+
+footer #list a:hover{
+    color: #af6203;
+    text-shadow: none;
+    text-decoration: underline;
+
+}
+
+footer #modulos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 40px 0px;
+}
+
+    footer #modulos a {
+        padding: 10px 6px;
+        margin-right: 5px;
+        border-radius: 10px;
+
+        color: white;
+        font-size: 1.2em;
+        text-decoration: none;
+        font-family: var(--font-title);
+        background-color: var(--color3);
+        box-shadow: -1px 1px 3px 1px #094c5280;
+    }
+
+    footer #modulos a:hover{
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.651);
+        background-color: var(--color3-hover);
+    }
+
+/* MEDIA QUERIES____________________________________________________________________________________________________________________ */
+@media only screen and (max-width: 1024px) {
+    h1{
+        font-size: 2em !important;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    h3{
+        font-size: 1em;
+    }
+    
+    p{
+        font-size: 0.8em !important;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    section{
+        width: 80%;
+    }
+
+    h1{
+        font-size: 1.5em !important;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    h3{
+        font-size: 0.8em;
+    }
+    
+    p{
+        font-size: 0.6em !important;
+    }
+}
+
