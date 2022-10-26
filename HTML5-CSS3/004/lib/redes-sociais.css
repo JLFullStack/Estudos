@@ -1,0 +1,62 @@
+/* GLOBAL ___________________________________________________________________________________________________________________________________ */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background: url("../lib/Mídias/images/redes-sociais/imagens/fundo-madeira.jpg") no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main{
+    position: relative;
+
+    height: 70vh;
+    width: 100%;
+}
+
+    #redes-sociais{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        position: absolute;
+        top: 100%;
+        left: 50%;
+
+        width: 80%;
+        transform: translate(-50%, -50%);
+    }
+
+    #redes-sociais a img{
+        margin: 10px;
+        width: 70px;
+        border-radius: 50%;
+        box-sizing: border-box;
+        box-shadow: -1px 2px 8px -1px #000000c4;
+    }
+
+    #redes-sociais a img:hover {
+        border: 2px solid rgba(255, 255, 255, 0.534);
+        animation: zoom .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+        transition: border .3s;
+    }
+
+    @keyframes zoom {
+        0% {
+            transform: scale(1);
+        }
+    
+        100% {
+            transform: scale(1.3);
+
+        }
+    }
