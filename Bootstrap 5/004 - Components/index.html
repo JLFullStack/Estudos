@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componentes Bootstrap</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class=" bg-dark py-3 m-0">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid row">
+
+                <a class="navbar-brand col-4 ps-5 fs-4" href="index.html">
+                    <img src="https://tyriar.gallerycdn.vsassets.io/extensions/tyriar/luna-paint/0.16.0/1661007177305/Microsoft.VisualStudio.Services.Icons.Default"
+                        alt="Logo" width="50" height="50" class="align-text-center">
+                    CODING
+                </a>
+
+                <button class="navbar-toggler col-1 p-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbar-center, #navbar-end" aria-controls="navbar-center, navbar-end"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbarNavDropdown collapse navbar-collapse justify-content-center col-4 ps-5 ps-lg-0"
+                    id="navbar-center">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="navbarNavDropdown collapse navbar-collapse justify-content-end col-4 pe-5 ps-5 ps-lg-0"
+                    id="navbar-end">
+
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown link
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Link</a></li>
+                                <li><a class="dropdown-item" href="#">Link</a></li>
+                                <li><a class="dropdown-item" href="#">Link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <button class="btn px-4 py-1 ms-0 ms-lg-3 btn-danger">sair</button>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main class="container-fluid p-0">
+        <section class="text-center mt-5">
+
+            <!-- Modal Buttom -->
+            <button type="button" class="btn btn-primary btn-lg shadow" data-bs-toggle="modal"
+                data-bs-target="#modal-estrutura-basica">
+                Abrir Modal
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="modal-estrutura-basica" tabindex="-1"
+                aria-labelledby="modal-estrutura-basica-Label" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+
+                        <div class="modal-header bg-primary">
+                            <h1 class="modal-title fs-3 text-white" id="modal-estrutura-basica-Label">Estrutura Básica
+                                de uma Modal</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+
+                        <div class="modal-body">
+                            <div class="row">
+                                <p class="col-12 fs-5">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos vel quam neque quas
+                                    eligendi molestiae perspiciatis enim. Ullam commodi beatae in atque, earum qui
+                                    provident, perferendis, quae possimus id necessitatibus?
+                                    Officia velit dolorem culpa nemo cupiditate laudantium, rem quibusdam. Ea, unde!
+                                    Architecto fugiat sunt aliquam nam quia at eveniet corporis, dolor aut ducimus eum a
+                                    error cum blanditiis distinctio perspiciatis?
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button reset" class="btn btn-secondary btn-lg"
+                                data-bs-dismiss="modal">Fechar</button>
+                            <button type="button" class="btn btn-success btn-lg">Salvar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Modal -->
+        </section>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
