@@ -1,0 +1,25 @@
+[{
+    "nome": "Lucas Araújo",
+    "idade": 31,
+    "sexo": "masculino",
+    "estado_civil": "casado",
+    "profissao": "programador de computador",
+    "detalhes_empresa": {
+        "nome_empresa": "Prefeitura de Praia Grande",
+        "cidade_local": "Praia Grande"
+    },
+    "estudos": ["HTML5", "CSS3", "Java Script"]
+},
+
+{
+    "nome": "André Alcântara",
+    "idade": 40,
+    "sexo": "masculino",
+    "estado_civil": "casado",
+    "profissao": "programador de computador",
+    "detalhes_empresa": {
+        "nome_empresa": "Prefeitura de Praia Grande",
+        "cidade_local": "Praia Grande"
+    },
+    "estudos": ["Clean Arctecture"]
+}]

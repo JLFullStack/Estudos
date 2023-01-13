@@ -11,8 +11,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="media-screen.css">
-
     <style>
         body {
             height: 100vh;
@@ -40,33 +38,25 @@
                     src="https://i.pinimg.com/originals/0b/7c/3c/0b7c3cf9bd6ef084ce8645b19f96732e.png" alt="logo">
             </div>
 
-            <form action="" method="post" class="col-md-6 p-5 bg-light text-center" id="form-login" novalidate>
+            <form action="" method="post" class="col-md-6 p-5 bg-light text-center" id="form-login">
                 <h3 class="text-info mb-3"><strong>LOGIN</strong></h3>
 
                 <div class="input-group mb-2 p-2">
                     <span class="input-group-text">@</span>
-                    <div class="form-floating">
-                        <input type="email" class="form-control" id="campo-email-form-Login" placeholder="E-Mail"
-                            required>
+                    <div class="form-floating" id="grupo-email-form-Login">
+                        <input type="email" class="form-control" id="campo-email-form-Login" placeholder="E-Mail">
                         <label for="campo-email-form-Login" class="text-muted">E-Mail</label>
                     </div>
-                    <div class="invalid-feedback text-end" id="menssagem-email-invalido-form-Login"
-                        style="display: none">
-                        E-mail inválido.
-                    </div>
+                    <div class="invalid-feedback text-end" id="menssagem-email-invalido-form-Login"></div>
                 </div>
 
                 <div class="input-group mb-3 p-2">
-                    <span class="input-group-text" id="inputGroupPrepend">@</span>
-                    <div class="form-floating">
-                        <input type="password" class="form-control" id="campo-senha-form-Login" placeholder="Senha"
-                            aria-describedby="inputGroupPrepend" onblur="validarFormularioDeLogin(this)" required>
+                    <span class="input-group-text">@</span>
+                    <div class="form-floating" id="grupo-senha-form-Login">
+                        <input type="password" class="form-control" id="campo-senha-form-Login" placeholder="Senha">
                         <label for="campo-senha-form-Login" class="text-muted">Senha</label>
                     </div>
-                    <div class="invalid-feedback text-end" id="menssagem-senha-invalida-form-Login"
-                        style="display: none">
-                        Senha inválida.
-                    </div>
+                    <div class="invalid-feedback text-end" id="menssagem-senha-invalida-form-Login"></div>
                 </div>
 
                 <div class="form-check mb-5 ps-0">
@@ -76,8 +66,10 @@
                 </div>
 
                 <div class="row-12">
-                    <button type="submit" class="btn btn-info col-4 py-3 text-white"
-                        onclick="validarFormularioDeLogin()"><strong>Entrar</strong></button>
+                    <button type="submit reset" id="btn-entrar-form-login" class="btn btn-info col-4 py-3 text-white"
+                        onclick="validarFormularioDeLogin()">
+                        <strong>Entrar</strong>
+                    </button>
                 </div>
             </form>
         </section>
@@ -88,50 +80,8 @@
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
     </script>
 
-    <script>
-        function validarFormularioDeLogin() {
-            const
-                email = document.querySelector("#campo-email-form-Login"),
-                menssagemEmailInvalido = document.querySelector("#menssagem-email-invalido-form-Login"),
-                senha = document.querySelector("#campo-senha-form-Login"),
-                menssagemSenhaInvalida = document.querySelector("#menssagem-senha-invalida-form-Login");
+    <script src="lib/form.js"></script>
 
-            // validação de email
-            if (email.value != "jledicao@gmail.com") {
-                event.preventDefault();
-                event.stopPropagation();
-
-                email.classList.add('is-invalid');
-                menssagemEmailInvalido.style = "display:block";
-            } else {
-                email.classList.remove('is-invalid');
-                email.classList.add('is-valid');
-                menssagemEmailInvalido.style = "display:none";
-            }
-
-            //validação de senha
-            if (senha.value != "123456") {
-                event.preventDefault();
-                event.stopPropagation();
-
-                senha.classList.add('is-invalid');
-                menssagemSenhaInvalida.style = "display:block";
-            } else {
-                senha.classList.remove('is-invalid');
-                senha.classList.add('is-valid');
-                menssagemSenhaInvalida.style = "display:none";
-            }
-
-            // formularioDeLogion.addEventListener('submit', event => {
-            //     if (!formularioDeLogion.checkValidity()) {
-            //         event.preventDefault();
-            //         event.stopPropagation();
-            //     };
-
-            //     formularioDeLogion.classList.add('was-validated');
-            // }, false)
-        };
-    </script>
 </body>
 
 </html>
