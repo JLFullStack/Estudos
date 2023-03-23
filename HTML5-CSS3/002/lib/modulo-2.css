@@ -4,6 +4,7 @@
 /*fonte baixada*/
 @font-face {
     font-family: 'Gabriela';
+    font-weight: 400;
     src: url('fonts/Gabriela/Gabriela-Regular.ttf') format('truetype');
 }
 
@@ -28,7 +29,6 @@ a {
     --fonte-destaque: 'Gabriela', serif;
     --fonte-titulo: 'lucida sans unicode', 'lucida grande', lucida, sans-serif;
     --fonte-conteudo: 'Varela Round', sans-serif;
-
 }
 
 
