@@ -1,8 +1,9 @@
-# O que são estruturas condicionais?
-# Estruturas condicionais são usadas para tomar decisões no código com base em condições específicas.
-# Elas permitem que o programa execute diferentes blocos de código dependendo do resultado de uma condição.
-# Em Python, as principais estruturas condicionais são: if, elif e else.
-
+"""
+O que são estruturas condicionais?
+Estruturas condicionais são usadas para tomar decisões no código com base em condições específicas.
+Elas permitem que o programa execute diferentes blocos de código dependendo do resultado de uma condição.
+Em Python, as principais estruturas condicionais são: if, elif e else.
+"""
 # Exemplo básico de estrutura condicional em Python:
 MAIOR_IDADE = 18
 idade = 18

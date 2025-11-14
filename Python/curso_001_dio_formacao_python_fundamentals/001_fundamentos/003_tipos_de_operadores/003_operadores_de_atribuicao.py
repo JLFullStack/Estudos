@@ -1,7 +1,8 @@
-# O que são operadores de atribuição?
-# Operadores de atribuição são usados para atribuir valores a variáveis.
-# O operador de atribuição mais comum é o sinal de igual (=).
-
+"""
+O que são operadores de atribuição?
+Operadores de atribuição são usados para atribuir valores a variáveis.
+O operador de atribuição mais comum é o sinal de igual (=).
+"""
 # Exemplo básico de atribuição
 x = 10  # Atribui o valor 10 à variável x
 y = 5   # Atribui o valor 5 à variável y

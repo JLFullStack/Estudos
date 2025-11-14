@@ -1,12 +1,13 @@
-# Estruturas de repetição (loops) são construções que permitem executar um trecho de código 
-# várias vezes enquanto uma condição for verdadeira ou sobre elementos de uma coleção. Em Python as principais são:
+"""
+Estruturas de repetição (loops) são construções que permitem executar um trecho de código 
+várias vezes enquanto uma condição for verdadeira ou sobre elementos de uma coleção. Em Python as principais são:
 
-# for: itera sobre sequências (listas, tuplas, strings, range, etc.).
-# while: executa enquanto uma condição booleana for True.
-# break: interrompe o loop imediatamente.
-# continue: pula para a próxima iteração.
-# else no loop: executa quando o loop termina normalmente (sem break).
-
+for: itera sobre sequências (listas, tuplas, strings, range, etc.).
+while: executa enquanto uma condição booleana for True.
+break: interrompe o loop imediatamente.
+continue: pula para a próxima iteração.
+else no loop: executa quando o loop termina normalmente (sem break).
+"""
 
 # Exemplos curtos:
 

@@ -1,9 +1,10 @@
-# O que são operadores de associação em Python?
-# Operadores de associação são usados para verificar se um valor ou variável está presente em uma sequência
-# (como listas, tuplas, dicionários, conjuntos ou strings). Os dois principais operadores de associação são:
-# - in: Retorna True se o valor estiver presente na sequência.
-# - not in: Retorna True se o valor não estiver presente na sequência.
-
+"""
+O que são operadores de associação em Python?
+Operadores de associação são usados para verificar se um valor ou variável está presente em uma sequência
+(como listas, tuplas, dicionários, conjuntos ou strings). Os dois principais operadores de associação são:
+    - in: Retorna True se o valor estiver presente na sequência.
+    - not in: Retorna True se o valor não estiver presente na sequência.
+"""
 
 
 # Exemplos de uso dos operadores de associação:

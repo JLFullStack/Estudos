@@ -1,8 +1,9 @@
-# o que são operadores lógicos?
-# operadores lógicos são utilizados para realizar operações lógicas entre valores booleanos (True ou False).
-# também são utilizados em conjunto com os operadores de comparação para formar expressões mais complexas.
-# os principais operadores lógicos em python são: and, or, not.
-
+"""
+o que são operadores lógicos?
+operadores lógicos são utilizados para realizar operações lógicas entre valores booleanos (True ou False).
+também são utilizados em conjunto com os operadores de comparação para formar expressões mais complexas.
+os principais operadores lógicos em python são: and, or, not.
+"""
 # exemplo de uso dos operadores lógicos:
 a = True
 b = False

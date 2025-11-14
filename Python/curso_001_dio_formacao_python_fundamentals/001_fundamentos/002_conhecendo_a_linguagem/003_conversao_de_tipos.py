@@ -1,11 +1,11 @@
-# O que é conversão de tipos?
-# É quando convertemos um tipo de dado em outro tipo de dado    
-# por exemplo, converter um número inteiro em um número decimal (float)
-
-# existem duas formas de fazer a conversão de tipos em python:
-# 1 - implícita
-# 2 - explícita]
-
+"""
+O que é conversão de tipos?
+É quando convertemos um tipo de dado em outro tipo de dado    
+por exemplo, converter um número inteiro em um número decimal (float)
+existem duas formas de fazer a conversão de tipos em python:
+    1 - implícita
+    2 - explícita]
+"""
 # conversão implícita
 print('\nconversão implícita')    
 inteiro = 10

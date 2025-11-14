@@ -1,7 +1,8 @@
-# O que são operadores aritméticos?
-# Operadores aritméticos são símbolos usados para realizar operações matemáticas básicas.
-# Eles incluem adição, subtração, multiplicação, divisão, entre outros.
-
+"""
+O que são operadores aritméticos?
+Operadores aritméticos são símbolos usados para realizar operações matemáticas básicas.
+Eles incluem adição, subtração, multiplicação, divisão, entre outros.
+"""
 # Exemplos de operadores aritméticos em Python:
 print(f"1 + 1 = {1 + 1}")     # adição
 print(f"10 - 2 = {10 - 2}")   # subtração

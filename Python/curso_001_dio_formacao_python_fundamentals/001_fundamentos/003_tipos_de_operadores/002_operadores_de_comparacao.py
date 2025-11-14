@@ -1,7 +1,7 @@
-# O que são operadores de comparação?
-# Operadores de comparação são utilizados para comparar dois valores
-# o resultado da comparação é sempre um valor booleano: True ou False
-
+"""
+O que são operadores de comparação?
+Operadores de comparação são utilizados para comparar dois valores o resultado da comparação é sempre um valor booleano: True ou False
+"""
 saldo = 450
 saque = 200
 

@@ -1,9 +1,10 @@
-# O que são variáveis e constantes em Python?
-# Variáveis são espaços na memória do computador que armazenam valores que podem ser alterados durante
-# a execução do programa. Constantes, por outro lado, são valores que não devem ser alterados após serem
-# definidos. Em Python, não há suporte nativo para constantes, mas é uma convenção usar letras maiúsculas para indicar
-# que uma variável deve ser tratada como constante.
-
+"""
+O que são variáveis e constantes em Python?
+Variáveis são espaços na memória do computador que armazenam valores que podem ser alterados durante
+a execução do programa. Constantes, por outro lado, são valores que não devem ser alterados após serem
+definidos. Em Python, não há suporte nativo para constantes, mas é uma convenção usar letras maiúsculas para indicar
+que uma variável deve ser tratada como constante.
+"""
 # Exemplos de variáveis em Python:
 idade = 34
 nome = 'Lucas Araújo'

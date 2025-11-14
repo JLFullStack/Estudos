@@ -1,9 +1,10 @@
-# O que são operadores de identidade em Python?
-# Operadores de identidade são usados para comparar objetos, verificando se eles são o mesmo objeto na memória.
-# Em Python, existem dois operadores de identidade:
-# is: Retorna True se ambos os operandos referem-se ao mesmo objeto.
-# is not: Retorna True se ambos os operandos não referem-se ao mesmo objeto (ou seja, são objetos diferentes).
-
+"""
+O que são operadores de identidade em Python?
+Operadores de identidade são usados para comparar objetos, verificando se eles são o mesmo objeto na memória.
+Em Python, existem dois operadores de identidade:
+is: Retorna True se ambos os operandos referem-se ao mesmo objeto.
+is not: Retorna True se ambos os operandos não referem-se ao mesmo objeto (ou seja, são objetos diferentes).
+"""
 
 # Exemplo de uso dos operadores de identidade:
 a = [1, 2, 3]
